@@ -1,0 +1,29 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1773827402
+::res://assets/::1772618860
+pexels-rodolphozanardo-5432951.jpg::CompressedTexture2D::7675315620326845742::1771334768::1771334770::1::::<><><>0<>0<>192acc0a5ce3a022de17811c6e01a0c2<>res://.godot/imported/pexels-rodolphozanardo-5432951.jpg-b813d1e33646cadbd8589ab1d2f53256.ctex::
+Stranger back in the Night.ttf::FontFile::5826972380369023873::1771336009::1771336009::1::::<><><>0<>0<>0f07b2de40f2f8461bf2d4d53d9835d7<>res://.godot/imported/Stranger back in the Night.ttf-04581ae0150e3618863644c213bc2c62.fontdata::
+::res://assets/models/::1773827402
+::res://player/::1773827402
+Player.gd::GDScript::6085917990972745844::1772620459::0::1::::<>CharacterBody3D<><>0<>0<><>::
+player.tscn::PackedScene::8692220066892294280::1773827402::0::1::::<><><>0<>0<><>::uid://csycgeirxpaoq::::res://player/Player.gd<>uid://dxo0wdfmo0cs5::::res://player/flashlight/source/Flashlight.glb
+::res://player/flashlight/::1772618808
+::res://player/flashlight/source/::1772618874
+Flashlight.glb::PackedScene::8804064121454946034::1771637422::1773827406::1::::<><><>0<>0<>b2563f52e1668807ecde99fd5ab957da<>res://.godot/imported/Flashlight.glb-3d9244e52b3bb9e2ad9cd43015743412.scn::uid://cke8aqm77y6qv::::res://player/flashlight/source/Flashlight_Flashlight_Flashlight_BaseColor.1001.png<>uid://5uivrsw7vxn::::res://player/flashlight/source/Flashlight_Flashlight_Flashlight_Metallic.1001.png-Flashlight_Flashlight_Roughness.1001.png<>uid://70oigyj0kl1y::::res://player/flashlight/source/Flashlight_Flashlight_Flashlight_Emissive.1001.png<>uid://bhs47582r7ux4::::res://player/flashlight/source/Flashlight_Flashlight_Flashlight_Normal.1001.png
+Flashlight_Flashlight_Flashlight_BaseColor.1001.png::CompressedTexture2D::5484991835952989681::1772618868::1773827403::1::::<><><>0<>0<>ab0f29dcb2efc00cff1af70ed72798cc<>res://.godot/imported/Flashlight_Flashlight_Flashlight_BaseColor.1001.png-ca885db775f51ce5f8844f78f427121c.s3tc.ctex::
+Flashlight_Flashlight_Flashlight_Emissive.1001.png::CompressedTexture2D::2298517117176641080::1772618865::1773827403::1::::<><><>0<>0<>17aedca09c8a426bf237b26348ad5380<>res://.godot/imported/Flashlight_Flashlight_Flashlight_Emissive.1001.png-10d768822b1ffb8baa9883aac3b91c0e.s3tc.ctex::
+Flashlight_Flashlight_Flashlight_Metallic.1001.png-Flashlight_Flashlight_Roughness.1001.png::CompressedTexture2D::63161088928909647::1772618870::1773827403::1::::<><><>0<>0<>892d337de995597662538c6438ab58ee<>res://.godot/imported/Flashlight_Flashlight_Flashlight_Metallic.1001.png-Flashlight_Flashlight_Roughness.1001.png-4e3f9c85b86f00dc4a23e3b398bc6509.s3tc.ctex::
+Flashlight_Flashlight_Flashlight_Normal.1001.png::CompressedTexture2D::2916720954857393707::1772618865::1773827403::1::::<><><>0<>0<>454f4e6f30f9699149aa42aec60c1263<>res://.godot/imported/Flashlight_Flashlight_Flashlight_Normal.1001.png-b791aaeeefeb6590dcd94f8336d9c7a3.s3tc.ctex::
+::res://player/flashlight/textures/::1772618865
+Flashlight_Flashlight_BaseColor.1001.png_2.png::CompressedTexture2D::6105307840757748683::1771637422::1773827405::1::::<><><>0<>0<>7d39bc5dcd269c6dcfd5571e9270f3a5<>res://.godot/imported/Flashlight_Flashlight_BaseColor.1001.png_2.png-f0fd95a23826651848f6ac146c07761e.ctex::
+Flashlight_Flashlight_Emissive.1001.png_0.png::CompressedTexture2D::3964053054051508070::1771637422::1773827403::1::::<><><>0<>0<>66b2b6d531688bc108e7efda4876be9d<>res://.godot/imported/Flashlight_Flashlight_Emissive.1001.png_0.png-6f78eca29f45bb8eeb2561b2048026b8.ctex::
+Flashlight_Flashlight_Metallic.1001.png-Flashlight_Flashligh.png::CompressedTexture2D::1506857276537219873::1771637422::1773827403::1::::<><><>0<>0<>f2258be0c3c679ba75090bd1658523a5<>res://.godot/imported/Flashlight_Flashlight_Metallic.1001.png-Flashlight_Flashligh.png-0ec35287087128ade9bc8406cabcec60.ctex::
+Flashlight_Flashlight_Normal.1001.png_1.png::CompressedTexture2D::1789703194073314552::1771637422::1773827405::1::::<><><>0<>0<>11282d64426f9b2b4dcc092ee1e30242<>res://.godot/imported/Flashlight_Flashlight_Normal.1001.png_1.png-181682008f18780e69b5271fb87ba644.ctex::
+::res://scenes/::1773059249
+mainScene.tscn::PackedScene::4307979446794815301::1773059249::0::1::::<><><>0<>0<><>::uid://dv3tuhkj4utx5::::res://player/player.tscn
+UI_Overlay.tscn::PackedScene::4152289145854729927::1772619675::0::1::::<><><>0<>0<><>::
+::res://scripts/::1772620596
+FadeTransition.tscn::PackedScene::3471069099861417724::1771582962::0::1::::<><><>0<>0<><>::uid://cbwykykm8frii::::res://scripts/scene_transition.gd
+MainMenu.tscn::PackedScene::8840863406284645936::1772620596::0::1::::<><><>0<>0<><>::uid://8wy14b4j52d6::::res://scripts/main_menu.gd<>uid://dhl8ld5byslrq::::res://assets/pexels-rodolphozanardo-5432951.jpg<>uid://cpavnbv3fjftp::::res://assets/Stranger back in the Night.ttf
+main_menu.gd::GDScript::2363153315165129553::1772619045::0::1::::<>Control<><>0<>0<><>::
+scene_transition.gd::GDScript::4889922863976981908::1771337457::0::1::::<>CanvasLayer<><>0<>0<><>::
