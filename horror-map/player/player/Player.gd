@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 # --- Configuration ---
 const WALK_SPEED = 5.0
-const SPRINT_SPEED = 9.0  # Speed when holding shift
+const SPRINT_SPEED = 9.0
 const JUMP_VELOCITY = 4.5
 const SENSITIVITY = 0.003
 
@@ -11,16 +11,28 @@ const ACCELERATION = 10.0
 const FRICTION = 10.0
 
 # --- Head Bob Configuration ---
-const BOB_FREQ = 2.4
-const BOB_AMP = 0.08
+const BOB_FREQ = 2.0
+const BOB_AMP = 0.05
+const IDLE_BOB_FREQ = 1.0
+const IDLE_BOB_AMP = 0.01 
 var t_bob = 0.0
 
 # --- Nodes ---
 @onready var neck: Node3D = $Neck
 @onready var camera: Camera3D = $Neck/Camera3D
+@onready var spotlight: SpotLight3D = $Neck/Flashlight/SpotLight3D
+# 1. NEW: Get a reference to the AnimationPlayer node
+@onready var flashlight_anim: AnimationPlayer = $Neck/Flashlight/AnimationPlayer
 
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	
+	# 2. NEW: Play the "draw" animation as soon as the game starts
+	# Ensure your animation name in the player is exactly "draw" (lowercase)
+	if flashlight_anim.has_animation("draw"):
+		flashlight_anim.play("draw")
+	else:
+		print_debug("Warning: 'draw' animation not found on AnimationPlayer")
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
@@ -30,18 +42,20 @@ func _unhandled_input(event: InputEvent) -> void:
 
 	if event.is_action_pressed("ui_cancel"):
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+		
+	if event.is_action_pressed("toggle_flashlight"):
+		spotlight.visible = not spotlight.visible
 
 func _physics_process(delta: float) -> void:
 	# 1. Add Gravity
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
-	# 2. Handle Jump (Continuous)
+	# 2. Handle Jump
 	if Input.is_action_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
-	# 3. Handle Sprint (New)
-	# Determine current speed based on if "sprint" is held
+	# 3. Handle Sprint 
 	var current_speed = WALK_SPEED
 	if Input.is_action_pressed("sprint"):
 		current_speed = SPRINT_SPEED
@@ -52,7 +66,6 @@ func _physics_process(delta: float) -> void:
 
 	# 5. Handle Smooth Movement
 	if direction:
-		# We use 'current_speed' here instead of a constant
 		velocity.x = lerp(velocity.x, direction.x * current_speed, ACCELERATION * delta)
 		velocity.z = lerp(velocity.z, direction.z * current_speed, ACCELERATION * delta)
 	else:
@@ -62,15 +75,25 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 	# 6. Handle Head Bob
-	if is_on_floor():
-		# The bob speed is multiplied by velocity, so sprinting makes it faster automatically
-		t_bob += delta * velocity.length() * float(is_on_floor())
-		camera.transform.origin = _headbob(t_bob)
-	else:
-		camera.transform.origin = camera.transform.origin.lerp(Vector3.ZERO, 10 * delta)
+	var bob_target := Vector3.ZERO
+	
+	# Only apply headbob if the draw animation is finished playing.
+	# This prevents the bob from fighting the draw animation.
+	if not flashlight_anim.is_playing() or flashlight_anim.current_animation != "draw":
+		if is_on_floor():
+			if velocity.length() > 0.1: 
+				t_bob += delta * velocity.length()
+				bob_target = _headbob(t_bob, BOB_FREQ, BOB_AMP)
+			else: # Idle state
+				t_bob += delta * 2.0 
+				bob_target = _headbob(t_bob, IDLE_BOB_FREQ, IDLE_BOB_AMP)
 
-func _headbob(time) -> Vector3:
+	# Smoothly interpolate the camera towards the target bob position
+	camera.transform.origin = camera.transform.origin.lerp(bob_target, 10 * delta)
+
+# Custom function for calculating bob position
+func _headbob(time: float, freq: float, amp: float) -> Vector3:
 	var pos = Vector3.ZERO
-	pos.y = sin(time * BOB_FREQ) * BOB_AMP
-	pos.x = cos(time * BOB_FREQ / 2) * BOB_AMP
+	pos.y = sin(time * freq) * amp
+	pos.x = cos(time * freq / 2) * amp
 	return pos
