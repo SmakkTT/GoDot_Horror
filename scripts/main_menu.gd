@@ -9,7 +9,7 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_start_pressed() -> void:
-	SceneTransition.change_scene("res://scenes/mainScene.tscn")
+	SceneTransition.change_scene("res://scenes/main.tscn")
 
 func _on_settings_pressed() -> void:
 	pass # Replace with function body.

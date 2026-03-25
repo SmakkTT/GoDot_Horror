@@ -1,8 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://dx7ty1kjphpqm"]
+[gd_scene load_steps=10 format=3 uid="uid://deabpmb0n0yvi"]
 
-[ext_resource type="Script" uid="uid://8wy14b4j52d6" path="res://scripts/main_menu.gd" id="1_2wh52"]
-[ext_resource type="Texture2D" uid="uid://dhl8ld5byslrq" path="res://assets/pexels-rodolphozanardo-5432951.jpg" id="1_yqorp"]
-[ext_resource type="FontFile" uid="uid://cpavnbv3fjftp" path="res://assets/Stranger back in the Night.ttf" id="2_0ykhv"]
+[ext_resource type="Script" uid="uid://18r7ylqadu6h" path="res://scripts/main_menu.gd" id="1_2wh52"]
+[ext_resource type="Texture2D" uid="uid://cogupwagbr7ge" path="res://assets/pexels-rodolphozanardo-5432951.jpg" id="1_yqorp"]
+[ext_resource type="FontFile" uid="uid://c4tw4up15in53" path="res://assets/Stranger back in the Night.ttf" id="2_0ykhv"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0ykhv"]
 texture = ExtResource("1_yqorp")
@@ -116,6 +116,15 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_ukcvp")
 theme_override_styles/hover = SubResource("StyleBoxFlat_0ykhv")
 text = "Play"
 
+[node name="Button3" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.12955824, 0.1295586, 0.12955832, 1)
+theme_override_colors/font_pressed_color = Color(0.32380158, 0.05045154, 0.056777753, 1)
+theme_override_font_sizes/font_size = 33
+theme_override_styles/normal = SubResource("StyleBoxFlat_ukcvp")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0ykhv")
+text = "Settings"
+
 [node name="Button2" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.12955824, 0.1295586, 0.12955832, 1)
@@ -146,4 +155,5 @@ theme_override_font_sizes/font_size = 128
 text = "Levent Horror"
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_quit_pressed"]
