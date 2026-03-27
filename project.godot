@@ -34,10 +34,6 @@ window/size/borderless=true
 
 enabled=PackedStringArray("res://addons/terrain_3d/plugin.cfg")
 
-[global_group]
-
-RoomLights=""
-
 [input]
 
 moveleft={
