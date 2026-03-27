@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://df10mdhw8erck"]
 
 [ext_resource type="Texture2D" uid="uid://4b7jrxft4dwu" path="res://assets/textures/dev/grids/Dark/texture_07.png" id="1_0wfyh"]
-[ext_resource type="Script" uid="uid://dmcxfrfblh6xn" path="res://scripts/LightsScript.gd" id="2_choun"]
+[ext_resource type="Script" uid="uid://cm8jthfvwl5pr" path="res://scripts/house_entrance.gd" id="2_5poiv"]
 [ext_resource type="Texture2D" uid="uid://rrrrqqgxxlt5" path="res://assets/hdris/moonless_golf_4k (1).exr" id="2_tipki"]
+[ext_resource type="PackedScene" uid="uid://bhy12tn8n4w8b" path="res://scenes/objective_hud.tscn" id="3_2cjbq"]
 [ext_resource type="Texture2D" uid="uid://ddprscrpsofah" path="res://demo/assets/textures/ground037_alb_ht.png" id="3_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://brhf4slp6ldvl" path="res://models/tree_pack_1.1/models/bush01.fbx" id="3_o6xl0"]
 [ext_resource type="PackedScene" uid="uid://inwvkc38fk3c" path="res://models/Furniture/Wooden Chair.glb" id="4_5he1u"]
@@ -40,6 +41,8 @@
 [ext_resource type="PackedScene" uid="uid://na5sf5kuk5yt" path="res://models/Furniture/Lingerie Dresser.glb" id="38_152kg"]
 [ext_resource type="PackedScene" uid="uid://1kw2q77y7ha" path="res://models/Furniture/Mirror.glb" id="39_r4e17"]
 [ext_resource type="PackedScene" uid="uid://xbghy5mqjaov" path="res://models/Furniture/Gas Stove.glb" id="40_y57op"]
+[ext_resource type="PackedScene" uid="uid://banjw1ws4uy1p" path="res://scenes/key/key_node.tscn" id="41_5poiv"]
+[ext_resource type="PackedScene" uid="uid://h17gik3mlbmr" path="res://scenes/door/door.tscn" id="43_chjal"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jyhfs"]
 albedo_texture = ExtResource("1_0wfyh")
@@ -53,8 +56,24 @@ uv1_triplanar = true
 albedo_texture = ExtResource("1_0wfyh")
 uv1_triplanar = true
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_tipki"]
-size = Vector3(2.5292969, 3.12854, 0.27929688)
+[sub_resource type="GDScript" id="GDScript_5he1u"]
+script/source = "extends Area3D
+
+func _on_body_entered(body: Node3D) -> void:
+	# Check if the object entering the area is part of your 'player' group
+	if body.is_in_group(\"player\"):
+		# This calls your GameManager (the Autoload we made earlier)
+		GameManager.update_objective(\"Go in the house\")
+		
+		# queue_free() deletes this trigger so it doesn't keep firing
+		queue_free()
+"
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5he1u"]
+size = Vector3(5.650879, 5.432129, 7.838135)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2cjbq"]
+size = Vector3(0.27563477, 1.6819763, 5.59375)
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_tbgi4"]
 panorama = ExtResource("2_tipki")
@@ -158,6 +177,43 @@ normal_texture = ExtResource("7_85g3d")
 [sub_resource type="Terrain3DAssets" id="Terrain3DAssets_trceg"]
 mesh_list = Array[Terrain3DMeshAsset]([SubResource("Terrain3DMeshAsset_85g3d"), SubResource("Terrain3DMeshAsset_choun")])
 texture_list = Array[Terrain3DTextureAsset]([SubResource("Terrain3DTextureAsset_eb6dy"), SubResource("Terrain3DTextureAsset_ya4ey")])
+
+[sub_resource type="Animation" id="Animation_chjal"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:light_energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [2.059]
+}
+
+[sub_resource type="Animation" id="Animation_cjqg0"]
+resource_name = "flicker"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:light_energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [2.059, 0.213]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vchkt"]
+_data = {
+&"RESET": SubResource("Animation_chjal"),
+&"flicker": SubResource("Animation_cjqg0")
+}
 
 [node name="world" type="Node3D" unique_id=1596086199]
 
@@ -360,7 +416,7 @@ size = Vector3(19.562012, 1, 5.533203)
 material = SubResource("StandardMaterial3D_jyhfs")
 
 [node name="CSGBox3D40" type="CSGBox3D" parent="stage/Building1" unique_id=418838743]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 50.53186, 2.7666016, -48.367603)
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 50.531857, 2.766874, -48.36775)
 use_collision = true
 size = Vector3(18.835571, 1, 5.533203)
 material = SubResource("StandardMaterial3D_jyhfs")
@@ -590,9 +646,9 @@ size = Vector3(19.438843, 1, 5.533203)
 material = SubResource("StandardMaterial3D_jyhfs")
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="stage/Building1/CSGBox3D7" unique_id=1643202332]
-transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, -4.478714, 0, -0.40112305)
+transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, -4.38826, 0, -0.81835866)
 operation = 2
-size = Vector3(3, 2.5, 4)
+size = Vector3(1.5078125, 2.5, 3.1655273)
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="stage/Building1/CSGBox3D7" unique_id=1160506392]
 transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, -0.7577057, 0, 0.29003906)
@@ -728,12 +784,21 @@ shadow_enabled = true
 
 [node name="Trigger Boxs" type="Node3D" parent="stage" unique_id=1359684936]
 
-[node name="Area3D" type="Area3D" parent="stage/Trigger Boxs" unique_id=1175919918]
-script = ExtResource("2_choun")
+[node name="ObjectiveHUD" parent="stage/Trigger Boxs" unique_id=1221455853 instance=ExtResource("3_2cjbq")]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="stage/Trigger Boxs/Area3D" unique_id=1929325444]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.547752, 2.1389196, -48.332985)
-shape = SubResource("BoxShape3D_tipki")
+[node name="YardTrigger" type="Area3D" parent="stage/Trigger Boxs" unique_id=555532432]
+script = SubResource("GDScript_5he1u")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="stage/Trigger Boxs/YardTrigger" unique_id=282874858]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.00444, 2.5512047, -34.944004)
+shape = SubResource("BoxShape3D_5he1u")
+
+[node name="HouseEntrance" type="Area3D" parent="stage/Trigger Boxs" unique_id=343172670]
+script = ExtResource("2_5poiv")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="stage/Trigger Boxs/HouseEntrance" unique_id=967014761]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.278126, 2.0368805, -34.743374)
+shape = SubResource("BoxShape3D_2cjbq")
 
 [node name="Foiliage" type="Node3D" parent="stage" unique_id=1203785890]
 
@@ -845,13 +910,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.28245, 0.5348518, -29.6391
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.80538, 1.108006, -32.234364)
 
 [node name="Root Scene5" parent="stage/Furniture" unique_id=39941735 instance=ExtResource("9_vchkt")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.19851, 0.7940035, -34.333267)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.19851, 0.03300655, -39.404934)
 
 [node name="Root Scene6" parent="stage/Furniture" unique_id=1509684805 instance=ExtResource("10_txyw0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.596764, 0.42096663, -31.749334)
 
+[node name="Root Scene30" parent="stage/Furniture" unique_id=324872809 instance=ExtResource("10_txyw0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.50848, 0.54106486, -55.58124)
+
+[node name="Root Scene31" parent="stage/Furniture" unique_id=478703997 instance=ExtResource("10_txyw0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.98692, 0.98178506, -59.54462)
+
 [node name="Root Scene7" parent="stage/Furniture" unique_id=1404346136 instance=ExtResource("11_vc5cj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.329033, 1.0772204, -28.814774)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.49944, 0.6825825, -59.113365)
 
 [node name="Root Scene8" parent="stage/Furniture" unique_id=878095903 instance=ExtResource("12_nvyfr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.9843, 0.6395285, -26.092836)
@@ -864,6 +935,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.481968, 1.3103678, -27.166
 
 [node name="Root Scene11" parent="stage/Furniture" unique_id=539866247 instance=ExtResource("15_bjg73")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.342438, 1.9990239, -32.768013)
+
+[node name="Root Scene32" parent="stage/Furniture" unique_id=1579860238 instance=ExtResource("15_bjg73")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.495155, 4.4086847, -53.070927)
+
+[node name="Root Scene33" parent="stage/Furniture" unique_id=1398395503 instance=ExtResource("15_bjg73")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.728943, 4.4086847, -64.2184)
 
 [node name="Root Scene12" parent="stage/Furniture" unique_id=449764540 instance=ExtResource("16_bu4jf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.909187, 1.1958978, -34.651363)
@@ -941,11 +1018,11 @@ metadata/_edit_lock_ = true
 
 [node name="player" type="Node3D" parent="." unique_id=1120965917]
 
-[node name="CharacterBody3D" parent="player" unique_id=1818141069 instance=ExtResource("4_85g3d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.64557, 2.5098207, -36.72725)
+[node name="CharacterBody3D" parent="player" unique_id=1818141069 groups=["player"] instance=ExtResource("4_85g3d")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 30.524189, 2.5098207, -34.290066)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1550312829]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.21706, 2.5648875, -59.72691)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.91438, 1.2537017, -59.545483)
 light_color = Color(0.51515454, 0.16002369, 0.1404852, 1)
 light_energy = 16.0
 shadow_enabled = true
@@ -953,23 +1030,52 @@ omni_range = 10.0
 omni_attenuation = 2.0
 
 [node name="OmniLight3D3" type="OmniLight3D" parent="." unique_id=1938778729]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.669373, 0.9799712, -55.53179)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.528442, 0.7860341, -55.528984)
 light_color = Color(0.8712964, 0.40473092, 0.3082592, 1)
 light_energy = 2.059
 shadow_enabled = true
 omni_range = 10.0
 omni_attenuation = 2.0
 
-[node name="OmniLight3D4" type="OmniLight3D" parent="." unique_id=733587785]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.17818, 4.1979294, -68.230316)
+[node name="AnimationPlayer" type="AnimationPlayer" parent="OmniLight3D3" unique_id=2088575650]
+libraries/ = SubResource("AnimationLibrary_vchkt")
+autoplay = &"flicker"
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="." unique_id=1591103687]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.469536, 4.1921906, -53.0666)
 light_color = Color(0.8712964, 0.40473092, 0.3082592, 1)
-light_energy = 4.436
+light_energy = 2.059
 shadow_enabled = true
-omni_range = 10.0
+omni_range = 0.997
+omni_attenuation = 2.0
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="." unique_id=1994542349]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.715656, 4.1921906, -64.18814)
+light_color = Color(0.8712964, 0.40473092, 0.3082592, 1)
+light_energy = 0.633
+shadow_enabled = true
+omni_range = 21.054
 omni_attenuation = 2.0
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="." unique_id=1752523809]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.3105, 9.244343, -59.72691)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70.9589, 8.363824, -59.72691)
 light_energy = 16.0
 shadow_enabled = true
-omni_range = 2216.408
+omni_range = 7.546
+
+[node name="Keys" type="Node3D" parent="." unique_id=189940626]
+
+[node name="Key Node" parent="Keys" unique_id=1685381730 instance=ExtResource("41_5poiv")]
+transform = Transform3D(0.014990862, 0, -0.00052348187, 0, 0.015, 0, 0.00052348187, 0, 0.014990862, 75.74213, 0.5538572, -58.516045)
+
+[node name="Key Node2" parent="Keys" unique_id=1686847541 instance=ExtResource("41_5poiv")]
+transform = Transform3D(0.014990862, 0, -0.00052348187, 0, 0.015, 0, 0.00052348187, 0, 0.014990862, 35.859512, 0.5538572, -45.752663)
+
+[node name="Doors" type="Node3D" parent="." unique_id=29149190]
+
+[node name="Door" parent="Doors" unique_id=1833120037 instance=ExtResource("43_chjal")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0964355, 0, -0.103771925)
+
+[connection signal="body_entered" from="stage/Trigger Boxs/YardTrigger" to="stage/Trigger Boxs/YardTrigger" method="_on_body_entered"]
+[connection signal="body_entered" from="stage/Trigger Boxs/HouseEntrance" to="stage/Trigger Boxs/YardTrigger" method="_on_house_entrance_body_entered"]
+[connection signal="body_entered" from="stage/Trigger Boxs/HouseEntrance" to="stage/Trigger Boxs/HouseEntrance" method="_on_body_entered"]

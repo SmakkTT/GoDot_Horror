@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bhy12tn8n4w8b"]
+
+[ext_resource type="Script" uid="uid://mo5lixgaec40" path="res://scripts/objective_hud.gd" id="1_be2v6"]
+
+[node name="ObjectiveHUD" type="CanvasLayer" unique_id=949019029]
+script = ExtResource("1_be2v6")
+
+[node name="Label" type="Label" parent="." unique_id=538523270]
+offset_left = -104.0
+offset_top = 520.0
+offset_right = 1252.0
+offset_bottom = 565.0
+theme_override_colors/font_color = Color(0.95686275, 0.78039217, 0.047058824, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
