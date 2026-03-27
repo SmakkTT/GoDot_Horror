@@ -7,7 +7,7 @@ valid=false
 
 [deps]
 
-source_file="res://rocky_terrain_02_4k.blend/textures/rocky_terrain_02_nor_gl_4k.exr"
+source_file="res://assets/rocky_terrain_02_4k.blend/textures/rocky_terrain_02_nor_gl_4k.exr"
 
 [params]
 
