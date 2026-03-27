@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://deabpmb0n0yvi"]
+[gd_scene format=3 uid="uid://deabpmb0n0yvi"]
 
 [ext_resource type="Script" uid="uid://18r7ylqadu6h" path="res://scripts/main_menu.gd" id="1_2wh52"]
 [ext_resource type="Texture2D" uid="uid://cogupwagbr7ge" path="res://assets/pexels-rodolphozanardo-5432951.jpg" id="1_yqorp"]
@@ -57,7 +57,7 @@ shadow_size = 13
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0ykhv"]
 bg_color = Color(0.9166399, 0.91663986, 0.9166398, 1)
 
-[node name="MainMenu" type="Control"]
+[node name="MainMenu" type="Control" unique_id=952075562]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -66,7 +66,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_2wh52")
 
-[node name="BG" type="Panel" parent="."]
+[node name="BG" type="Panel" parent="." unique_id=466528447]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -75,7 +75,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_0ykhv")
 
-[node name="ColorRect" type="ColorRect" parent="BG"]
+[node name="ColorRect" type="ColorRect" parent="BG" unique_id=120185256]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -85,14 +85,12 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="BG/ColorRect"]
-libraries = {
-&"": SubResource("AnimationLibrary_0ykhv")
-}
-autoplay = "flicker"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="BG/ColorRect" unique_id=855290122]
+libraries/ = SubResource("AnimationLibrary_0ykhv")
+autoplay = &"flicker"
 metadata/flicker = false
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=976407708]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -107,7 +105,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 17
 
-[node name="Button" type="Button" parent="VBoxContainer"]
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=992175901]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.12955824, 0.1295586, 0.12955832, 1)
 theme_override_colors/font_pressed_color = Color(0.32380158, 0.05045154, 0.056777753, 1)
@@ -116,16 +114,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_ukcvp")
 theme_override_styles/hover = SubResource("StyleBoxFlat_0ykhv")
 text = "Play"
 
-[node name="Button3" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.12955824, 0.1295586, 0.12955832, 1)
-theme_override_colors/font_pressed_color = Color(0.32380158, 0.05045154, 0.056777753, 1)
-theme_override_font_sizes/font_size = 33
-theme_override_styles/normal = SubResource("StyleBoxFlat_ukcvp")
-theme_override_styles/hover = SubResource("StyleBoxFlat_0ykhv")
-text = "Settings"
-
-[node name="Button2" type="Button" parent="VBoxContainer"]
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=80173583]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.12955824, 0.1295586, 0.12955832, 1)
 theme_override_colors/font_pressed_color = Color(0.32380158, 0.05045154, 0.056777753, 1)
@@ -135,7 +124,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_0ykhv")
 text = "Quit
 "
 
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="Label" parent="." unique_id=1754993363]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -155,5 +144,4 @@ theme_override_font_sizes/font_size = 128
 text = "Levent Horror"
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_quit_pressed"]

@@ -90,6 +90,7 @@ _data = {
 transform = Transform3D(-4.3711385e-08, 0, 0.9999999, 0, 1, 0, -0.9999999, 0, -4.3711385e-08, 38.721333, 2.1712618, -35.19639)
 sync_to_physics = false
 script = ExtResource("1_uvdjg")
+locks_from_trigger = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Animatable" unique_id=227957737]
 transform = Transform3D(1, 0, -3.5527137e-15, 0, 1, 0, 3.5527137e-15, 0, 1, -0.7810631, -0.10586548, 0.00894928)

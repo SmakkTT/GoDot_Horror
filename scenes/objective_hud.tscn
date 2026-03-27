@@ -18,3 +18,17 @@ theme_override_font_sizes/font_size = 32
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
+
+[node name="Interact" type="Label" parent="." unique_id=730116227]
+offset_left = -104.0
+offset_top = 462.0
+offset_right = 1252.0
+offset_bottom = 507.0
+theme_override_colors/font_color = Color(0.95686275, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true

@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://ch7hepokxkby7"]
+
+[ext_resource type="Script" uid="uid://d0ry2oomfpdu8" path="res://assets/jumpscare/jumpscare.gd" id="1_gngul"]
+[ext_resource type="Texture2D" uid="uid://djkqh67rg3gmc" path="res://assets/jumpscare/jumpscareAssets/Adobe Express - file (1).png" id="2_y74jy"]
+[ext_resource type="Texture2D" uid="uid://b4isuj7ch7cw2" path="res://assets/jumpscare/jumpscareAssets/Adobe Express - file.png" id="3_fumpe"]
+[ext_resource type="Texture2D" uid="uid://dhdaa2cedqy1k" path="res://assets/jumpscare/jumpscareAssets/photo_1_2026-03-27_17-49-37-Photoroom.png" id="4_ndfk3"]
+[ext_resource type="Texture2D" uid="uid://cu3l4uur13ct0" path="res://assets/jumpscare/jumpscareAssets/photo_2_2026-03-27_17-49-37-Photoroom.png" id="5_8sag2"]
+[ext_resource type="AudioStream" uid="uid://dqkdblt4c2vyp" path="res://assets/jumpscare/jumpscareAssets/prowler.mp3" id="6_11xby"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_choun"]
+size = Vector3(1, 2.8653564, 3.0080566)
+
+[node name="Jumpscare" type="Area3D" unique_id=1983837505]
+script = ExtResource("1_gngul")
+scare_textures = Array[Texture2D]([ExtResource("2_y74jy"), ExtResource("3_fumpe"), ExtResource("4_ndfk3"), ExtResource("5_8sag2")])
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=680798417]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9326782, -0.007446289)
+shape = SubResource("BoxShape3D_choun")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=1925755307]
+stream = ExtResource("6_11xby")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=510783948]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1926050954]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

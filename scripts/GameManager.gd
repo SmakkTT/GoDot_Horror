@@ -3,6 +3,23 @@ extends Node
 # This signal tells the UI to change the text
 signal objective_updated(new_text)
 
+# Add this near your other signal at the top
+signal interact_updated(is_visible: bool, text: String)
+
+# Add this at the top with your other signals
+signal lock_doors_event
+
+# Add this at the bottom
+func trigger_door_lock():
+	lock_doors_event.emit()
+
+# Add these functions at the bottom
+func show_interact(text: String):
+	interact_updated.emit(true, text)
+
+func hide_interact():
+	interact_updated.emit(false, "")
+
 var keys_collected: int = 0
 var total_keys: int = 2
 

@@ -1,7 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://dv3tuhkj4utx5"]
+[gd_scene format=3 uid="uid://dv3tuhkj4utx5"]
 
-[ext_resource type="Script" uid="uid://csycgeirxpaoq" path="res://player/Player.gd" id="1_l24vl"]
-[ext_resource type="PackedScene" uid="uid://dxo0wdfmo0cs5" path="res://player/flashlight/source/Flashlight.glb" id="2_rkbax"]
+[ext_resource type="Script" uid="uid://csycgeirxpaoq" path="res://player/player/Player.gd" id="1_l24vl"]
+[ext_resource type="PackedScene" uid="uid://dxo0wdfmo0cs5" path="res://player/player/flashlight/source/Flashlight.glb" id="2_rkbax"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_l24vl"]
 
@@ -86,30 +86,28 @@ _data = {
 &"draw": SubResource("Animation_rkbax")
 }
 
-[node name="CharacterBody3D" type="CharacterBody3D"]
+[node name="CharacterBody3D" type="CharacterBody3D" unique_id=632669668]
 script = ExtResource("1_l24vl")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1897640129]
 mesh = SubResource("CapsuleMesh_l24vl")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=843993698]
 shape = SubResource("ConvexPolygonShape3D_l24vl")
 
-[node name="Neck" type="Node3D" parent="."]
+[node name="Neck" type="Node3D" parent="." unique_id=323008355]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.65605414, 0)
 
-[node name="Camera3D" type="Camera3D" parent="Neck"]
+[node name="Camera3D" type="Camera3D" parent="Neck" unique_id=819812103]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
 
-[node name="Flashlight" parent="Neck" instance=ExtResource("2_rkbax")]
+[node name="Flashlight" parent="Neck" unique_id=550503856 instance=ExtResource("2_rkbax")]
 transform = Transform3D(-6.993822e-09, 0, 0.16, 0, 0.16, 0, -0.16, 0, -6.993822e-09, -0.199, -0.34405413, 0.294)
 
-[node name="SpotLight3D" type="SpotLight3D" parent="Neck/Flashlight"]
+[node name="SpotLight3D" type="SpotLight3D" parent="Neck/Flashlight" unique_id=375449751]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.3554616, 0.4848435, -1.1920929e-07)
 light_color = Color(0.99999815, 0.99514157, 0.61777186, 1)
 light_energy = 1.33
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Neck/Flashlight"]
-libraries = {
-&"": SubResource("AnimationLibrary_yw30f")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Neck/Flashlight" unique_id=23801933]
+libraries/ = SubResource("AnimationLibrary_yw30f")
