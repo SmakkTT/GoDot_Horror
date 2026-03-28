@@ -41,6 +41,7 @@
 [ext_resource type="PackedScene" uid="uid://banjw1ws4uy1p" path="res://scenes/key/key_node.tscn" id="41_5poiv"]
 [ext_resource type="PackedScene" uid="uid://h17gik3mlbmr" path="res://scenes/door/door.tscn" id="43_chjal"]
 [ext_resource type="PackedScene" uid="uid://ch7hepokxkby7" path="res://assets/jumpscare/jumpscare.tscn" id="44_cjqg0"]
+[ext_resource type="AudioStream" uid="uid://bql4urtxmpd8s" path="res://sounds/door_slam.wav" id="44_vchkt"]
 [ext_resource type="PackedScene" uid="uid://cqbrv3fdckcfe" path="res://models/Furniture/Desk Lamp.glb" id="45_txyw0"]
 [ext_resource type="Script" uid="uid://chwlfbkqcl5xy" path="res://scenes/lock_door_trigger.gd" id="45_vchkt"]
 [ext_resource type="Script" uid="uid://t2jmwlpmew2r" path="res://scenes/finish_game_trigger.gd" id="46_txyw0"]
@@ -1843,6 +1844,9 @@ script = ExtResource("45_vchkt")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Trigger Boxs/LockDoorTrigger" unique_id=457084400]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.48802948, 0.5873108, -0.28015137)
 shape = SubResource("BoxShape3D_cjqg0")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Trigger Boxs/LockDoorTrigger" unique_id=1474740673]
+stream = ExtResource("44_vchkt")
 
 [node name="FinishGameTrigger" type="Area3D" parent="Trigger Boxs" unique_id=468799247]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.401318, 1.8905137, -34.409378)

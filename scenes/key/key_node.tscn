@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://banjw1ws4uy1p"]
 
-[ext_resource type="PackedScene" uid="uid://drcvjpj5nhvbi" path="res://scenes/key.glb" id="1_vuuc3"]
-[ext_resource type="Script" uid="uid://dcnqlc0ey688k" path="res://scenes/key.gd" id="2_vl0xe"]
+[ext_resource type="PackedScene" uid="uid://drcvjpj5nhvbi" path="res://scenes/key/key.glb" id="1_vuuc3"]
+[ext_resource type="Script" uid="uid://dcnqlc0ey688k" path="res://scenes/key/key.gd" id="2_vl0xe"]
 
 [sub_resource type="Animation" id="Animation_ya4ey"]
 length = 0.001
@@ -86,7 +86,7 @@ _data = {
 transform = Transform3D(0.014990862, 0, -0.00052348187, 0, 0.015, 0, 0.00052348187, 0, 0.014990862, 0, 0, 0)
 
 [node name="Collectable Key" parent="." unique_id=1075382695 instance=ExtResource("1_vuuc3")]
-transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 49.35556, 0.3837855, -34.923435)
 script = ExtResource("2_vl0xe")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Collectable Key" unique_id=1804477586]

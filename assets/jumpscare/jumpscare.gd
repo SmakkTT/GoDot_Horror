@@ -5,7 +5,7 @@ extends Area3D
 @onready var scare_image = $CanvasLayer/TextureRect
 
 @export var scare_textures: Array[Texture2D] = []
-@export var cooldown_time: float = 25.0 # Adjustable in Inspector
+@export var cooldown_time: float = 25.0
 
 var is_playing: bool = false 
 
@@ -39,8 +39,6 @@ func _on_body_entered(body: Node3D) -> void:
 			var final_scale_factor = min(scale_ratio_x, scale_ratio_y) * 0.9
 			target_scale_vec = Vector2(final_scale_factor, final_scale_factor)
 		
-		# --- RESET PRE-SCARE ---
-		# Make absolutely sure the image is fully visible and small before starting
 		scare_image.modulate.a = 1.0
 		scare_image.scale = Vector2(0.1, 0.1) 
 		
@@ -50,18 +48,12 @@ func _on_body_entered(body: Node3D) -> void:
 		var tween = create_tween()
 		tween.tween_property(scare_image, "scale", target_scale_vec, 0.2)
 		
-		# Wait for 1.2 seconds for the main scare
 		await get_tree().create_timer(1.2).timeout
 		
-		# --- THE GLITCHY FLICKER EFFECT ---
-		# Loop 10 times rapidly
 		for i in range(10):
-			# Pick a totally random opacity between completely invisible (0.0) and mostly visible (0.8)
 			scare_image.modulate.a = randf_range(0.0, 0.8)
-			# Wait a tiny fraction of a second before changing it again
 			await get_tree().create_timer(0.05).timeout
 		
-		# --- THE FINAL RESET ---
 		canvas_layer.visible = false
 		await get_tree().create_timer(cooldown_time).timeout
-		is_playing = false # Now the player can trigger it again
+		is_playing = false

@@ -1,17 +1,18 @@
 extends AnimatableBody3D
 
 @export var interact_radius: float = 3.0 
-# --- NEW: The Checkbox! ---
 @export var locks_from_trigger: bool = false
+@export var sound_open_close: AudioStream
+@export var sound_locked: AudioStream
+@export var sound_slam: AudioStream
 
 @onready var anim_player = $AnimationPlayer
+@onready var audio_player = $AudioStreamPlayer3D
 
 var is_open: bool = false
 var player: Node3D = null
 var was_in_range: bool = false 
 var interact_key_name: String = "E"
-
-# --- NEW: Track if the door is currently locked ---
 var is_locked: bool = false
 
 func _ready() -> void:
@@ -23,17 +24,14 @@ func _ready() -> void:
 	if events.size() > 0:
 		interact_key_name = events[0].as_text().get_slice(" ", 0)
 		
-	# --- NEW: Listen for the trigger box! ---
 	GameManager.lock_doors_event.connect(_on_lock_triggered)
 
-# --- NEW: The Lockdown Function ---
 func _on_lock_triggered():
-	# If this specific door has the checkbox ticked in the Inspector...
 	if locks_from_trigger:
 		is_locked = true
-		
-		# Bonus horror trope: If the door is open when you hit the trigger, SLAM IT SHUT!
 		if is_open:
+			audio_player.stream = sound_slam
+			audio_player.play()
 			toggle_door()
 
 func _process(_delta: float) -> void:
@@ -44,7 +42,6 @@ func _process(_delta: float) -> void:
 		if is_now_in_range and not was_in_range:
 			was_in_range = true
 			
-			# --- NEW: Change UI text if the door is locked ---
 			if is_locked and GameManager.keys_collected < GameManager.total_keys:
 				GameManager.show_interact("Locked. Find all keys.")
 			else:
@@ -56,21 +53,20 @@ func _process(_delta: float) -> void:
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("interact") and was_in_range:
-		
-		# --- NEW: Interaction Logic ---
 		if is_locked:
-			# Check if we have collected all the keys!
 			if GameManager.keys_collected >= GameManager.total_keys:
-				is_locked = false # Unlock the door forever!
+				is_locked = false
+				audio_player.stream = sound_open_close
+				audio_player.play()
 				toggle_door()
-				
-				# Update the UI prompt now that it's unlocked
 				GameManager.show_interact("Press [" + interact_key_name + "] to close door")
 			else:
+				audio_player.stream = sound_locked
+				audio_player.play()
 				print("The door is locked! You need more keys.")
-				# (Optional: Add a rattle sound effect here later!)
 		else:
-			# Normal door behavior
+			audio_player.stream = sound_open_close
+			audio_player.play()
 			toggle_door()
 
 func toggle_door() -> void:

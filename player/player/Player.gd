@@ -21,14 +21,11 @@ var t_bob = 0.0
 @onready var neck: Node3D = $Neck
 @onready var camera: Camera3D = $Neck/Camera3D
 @onready var spotlight: SpotLight3D = $Neck/Flashlight/SpotLight3D
-# 1. NEW: Get a reference to the AnimationPlayer node
 @onready var flashlight_anim: AnimationPlayer = $Neck/Flashlight/AnimationPlayer
 
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	
-	# 2. NEW: Play the "draw" animation as soon as the game starts
-	# Ensure your animation name in the player is exactly "draw" (lowercase)
 	if flashlight_anim.has_animation("draw"):
 		flashlight_anim.play("draw")
 	else:
@@ -55,16 +52,13 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
-	# 3. Handle Sprint 
 	var current_speed = WALK_SPEED
 	if Input.is_action_pressed("sprint"):
 		current_speed = SPRINT_SPEED
 
-	# 4. Get Input Direction
 	var input_dir := Input.get_vector("moveleft", "moveright", "moveforward", "moveback")
 	var direction := (transform.basis * Vector3(-input_dir.x, 0, -input_dir.y)).normalized()
 
-	# 5. Handle Smooth Movement
 	if direction:
 		velocity.x = lerp(velocity.x, direction.x * current_speed, ACCELERATION * delta)
 		velocity.z = lerp(velocity.z, direction.z * current_speed, ACCELERATION * delta)
@@ -74,24 +68,19 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 
-	# 6. Handle Head Bob
 	var bob_target := Vector3.ZERO
 	
-	# Only apply headbob if the draw animation is finished playing.
-	# This prevents the bob from fighting the draw animation.
 	if not flashlight_anim.is_playing() or flashlight_anim.current_animation != "draw":
 		if is_on_floor():
 			if velocity.length() > 0.1: 
 				t_bob += delta * velocity.length()
 				bob_target = _headbob(t_bob, BOB_FREQ, BOB_AMP)
-			else: # Idle state
+			else:
 				t_bob += delta * 2.0 
 				bob_target = _headbob(t_bob, IDLE_BOB_FREQ, IDLE_BOB_AMP)
 
-	# Smoothly interpolate the camera towards the target bob position
 	camera.transform.origin = camera.transform.origin.lerp(bob_target, 10 * delta)
 
-# Custom function for calculating bob position
 func _headbob(time: float, freq: float, amp: float) -> Vector3:
 	var pos = Vector3.ZERO
 	pos.y = sin(time * freq) * amp

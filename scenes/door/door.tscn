@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://5lt77mql4skc" path="res://scenes/door/Door.gd" id="1_uvdjg"]
 [ext_resource type="PackedScene" uid="uid://ba5o7jg5cyrkn" path="res://scenes/door/Door3.fbx" id="2_83dcw"]
+[ext_resource type="AudioStream" uid="uid://oxmqdnfjlc4w" path="res://sounds/door.wav" id="3_u3mo4"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_85g3d"]
 size = Vector3(1.4624634, 2.989563, 0.36846924)
@@ -102,5 +103,8 @@ libraries/ = SubResource("AnimationLibrary_ya4ey")
 
 [node name="Door3" parent="Animatable" unique_id=2038735596 instance=ExtResource("2_83dcw")]
 transform = Transform3D(1, 0, -4.6566484e-10, 0, 0.99999994, 0, 4.6566484e-10, 0, 1, -0.7826958, -1.6885082, 3.8146973e-06)
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Animatable" unique_id=261396199]
+stream = ExtResource("3_u3mo4")
 
 [editable path="Animatable/Door3"]
