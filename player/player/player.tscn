@@ -2,6 +2,9 @@
 
 [ext_resource type="Script" uid="uid://csycgeirxpaoq" path="res://player/player/Player.gd" id="1_l24vl"]
 [ext_resource type="PackedScene" uid="uid://dxo0wdfmo0cs5" path="res://player/player/flashlight/source/Flashlight.glb" id="2_rkbax"]
+[ext_resource type="AudioStream" uid="uid://cp7kfh8f0i0ks" path="res://sounds/flashlight.wav" id="3_xuvyh"]
+[ext_resource type="AudioStream" uid="uid://ebxab8a3ar2t" path="res://sounds/walk.wav" id="4_uefk6"]
+[ext_resource type="AudioStream" uid="uid://coe7j84drylwe" path="res://sounds/sprint.wav" id="5_sfl1c"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_l24vl"]
 
@@ -111,3 +114,14 @@ light_energy = 1.33
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Neck/Flashlight" unique_id=23801933]
 libraries/ = SubResource("AnimationLibrary_yw30f")
+
+[node name="FlashlightAudio" type="AudioStreamPlayer3D" parent="." unique_id=1181682015]
+stream = ExtResource("3_xuvyh")
+
+[node name="WalkAudio" type="AudioStreamPlayer" parent="." unique_id=690541721]
+stream = ExtResource("4_uefk6")
+volume_db = -8.966
+
+[node name="SprintAudio" type="AudioStreamPlayer" parent="." unique_id=1356030975]
+stream = ExtResource("5_sfl1c")
+volume_db = -12.948

@@ -6,10 +6,15 @@
 script = ExtResource("1_be2v6")
 
 [node name="Label" type="Label" parent="." unique_id=538523270]
-offset_left = -104.0
-offset_top = 520.0
-offset_right = 1252.0
-offset_bottom = 565.0
+anchors_preset = -1
+anchor_top = 0.807
+anchor_right = 1.0
+anchor_bottom = 0.818
+offset_top = -22.5
+offset_bottom = 22.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0.95686275, 0.78039217, 0.047058824, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 4
@@ -20,10 +25,14 @@ vertical_alignment = 1
 uppercase = true
 
 [node name="Interact" type="Label" parent="." unique_id=730116227]
-offset_left = -104.0
-offset_top = 462.0
-offset_right = 1252.0
-offset_bottom = 507.0
+anchors_preset = -1
+anchor_top = 0.632
+anchor_right = 1.0
+anchor_bottom = 0.654
+offset_top = -22.5
+offset_bottom = 22.5
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_colors/font_color = Color(0.95686275, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 4
