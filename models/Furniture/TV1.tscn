@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://ck5nfwkjqp3dt"]
+
+[ext_resource type="PackedScene" uid="uid://dk7pfce8m3muf" path="res://models/Furniture/Tv.glb" id="1_rfkum"]
+[ext_resource type="Material" uid="uid://1853da8mvx0p" path="res://assets/glow.tres" id="2_t1tk5"]
+
+[sub_resource type="Animation" id="Animation_rfkum"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material_override:emission_energy_multiplier")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../SpotLight3D:light_energy")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_t1tk5"]
+resource_name = "new_animation"
+length = 3.1333334
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material_override:emission_energy_multiplier")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.13333333, 0.40836963, 0.541703, 0.6666667, 0.8, 1.7, 2.27, 2.4033334, 2.528297, 2.6616304),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 6.71, 0.0, 6.71, 0.0, 6.71, 0.0, 0.0, 6.71, 0.0, 6.71]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../SpotLight3D:light_energy")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.16, 0.41, 0.54, 0.69, 0.82000005, 1.71, 2.33, 2.46, 2.61, 2.74),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 10.888, 1.992, 8.83, 1.992, 8.83, 0.0, 1.992, 8.83, 1.992, 8.83]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lggw1"]
+_data = {
+&"RESET": SubResource("Animation_rfkum"),
+&"new_animation": SubResource("Animation_t1tk5")
+}
+
+[node name="Root Scene" unique_id=1108761239 instance=ExtResource("1_rfkum")]
+
+[node name="Tv1" parent="RootNode" parent_id_path=PackedInt32Array(2113766346) index="0" unique_id=1968221461]
+material_override = ExtResource("2_t1tk5")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="RootNode/Tv1" index="0" unique_id=365190756]
+libraries/ = SubResource("AnimationLibrary_lggw1")
+autoplay = &"new_animation"
+
+[node name="SpotLight3D" type="SpotLight3D" parent="RootNode" parent_id_path=PackedInt32Array(2113766346) index="1" unique_id=983141334]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.27475882)
+light_energy = 0.0
+shadow_enabled = true
+spot_range = 16.166
+spot_attenuation = 2.0
+spot_angle = 76.65

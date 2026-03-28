@@ -5,6 +5,7 @@ extends Area3D
 @onready var scare_image = $CanvasLayer/TextureRect
 
 @export var scare_textures: Array[Texture2D] = []
+@export var cooldown_time: float = 25.0 # Adjustable in Inspector
 
 var is_playing: bool = false 
 
@@ -62,4 +63,5 @@ func _on_body_entered(body: Node3D) -> void:
 		
 		# --- THE FINAL RESET ---
 		canvas_layer.visible = false
-		is_playing = false
+		await get_tree().create_timer(cooldown_time).timeout
+		is_playing = false # Now the player can trigger it again

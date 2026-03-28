@@ -1,11 +1,10 @@
-[gd_scene format=3 uid="uid://df10mdhw8erck"]
+[gd_scene format=4 uid="uid://df10mdhw8erck"]
 
 [ext_resource type="Texture2D" uid="uid://4b7jrxft4dwu" path="res://assets/textures/dev/grids/Dark/texture_07.png" id="1_0wfyh"]
 [ext_resource type="Script" uid="uid://cm8jthfvwl5pr" path="res://scripts/house_entrance.gd" id="2_5poiv"]
 [ext_resource type="Texture2D" uid="uid://rrrrqqgxxlt5" path="res://assets/hdris/moonless_golf_4k (1).exr" id="2_tipki"]
 [ext_resource type="PackedScene" uid="uid://bhy12tn8n4w8b" path="res://scenes/objective_hud.tscn" id="3_2cjbq"]
 [ext_resource type="Texture2D" uid="uid://ddprscrpsofah" path="res://demo/assets/textures/ground037_alb_ht.png" id="3_jyhfs"]
-[ext_resource type="PackedScene" uid="uid://brhf4slp6ldvl" path="res://models/tree_pack_1.1/models/bush01.fbx" id="3_o6xl0"]
 [ext_resource type="PackedScene" uid="uid://inwvkc38fk3c" path="res://models/Furniture/Wooden Chair.glb" id="4_5he1u"]
 [ext_resource type="PackedScene" uid="uid://dv3tuhkj4utx5" path="res://player/player/player.tscn" id="4_85g3d"]
 [ext_resource type="Texture2D" uid="uid://c1ots7w6i0i1q" path="res://demo/assets/textures/ground037_nrm_rgh.png" id="4_tbgi4"]
@@ -20,21 +19,19 @@
 [ext_resource type="PackedScene" uid="uid://dulyxn2s2v5bq" path="res://models/tree/tree_20.tscn" id="10_ya4ey"]
 [ext_resource type="PackedScene" uid="uid://c2lwofa201fim" path="res://models/Furniture/Table.glb" id="11_vc5cj"]
 [ext_resource type="PackedScene" uid="uid://cunwok0hjh3rf" path="res://models/Furniture/Bench.glb" id="12_nvyfr"]
-[ext_resource type="PackedScene" uid="uid://y7lno7w3lhmj" path="res://models/Furniture/Bonsai.glb" id="13_ty1g6"]
 [ext_resource type="PackedScene" uid="uid://i31cbgpjo0se" path="res://models/Furniture/Table-wAaFESADdd.glb" id="14_j2jfr"]
 [ext_resource type="PackedScene" uid="uid://cdmtajy7rksbi" path="res://models/Furniture/Ceiling Lamp-76VCPcN5C8.glb" id="15_bjg73"]
-[ext_resource type="PackedScene" uid="uid://y3c3ac51rcya" path="res://models/Furniture/Ceiling Lamp.glb" id="16_bu4jf"]
 [ext_resource type="PackedScene" uid="uid://b5n4k4nvhq8h1" path="res://models/Furniture/Wool Carpet.glb" id="24_o7ddy"]
 [ext_resource type="PackedScene" uid="uid://dhiijnjiyve8v" path="res://models/Furniture/Wooden Kitchen Sink.glb" id="25_0loja"]
 [ext_resource type="PackedScene" uid="uid://5pym4rlt61f4" path="res://models/Furniture/Wood Kitchen Table.glb" id="26_ids8r"]
 [ext_resource type="PackedScene" uid="uid://ckvs0x0au0ohf" path="res://models/Furniture/Two Seater Couch.glb" id="27_dnhof"]
-[ext_resource type="PackedScene" uid="uid://dk7pfce8m3muf" path="res://models/Furniture/Tv.glb" id="28_1v6qk"]
 [ext_resource type="PackedScene" uid="uid://ecdmpjnabkcd" path="res://models/Furniture/Toaster.glb" id="29_augu2"]
 [ext_resource type="PackedScene" uid="uid://d3qf6yorg2dt8" path="res://models/Furniture/Three Seater Couch.glb" id="30_tm6hj"]
 [ext_resource type="PackedScene" uid="uid://cdndwa2r1haka" path="res://models/Furniture/Small Bookshelf.glb" id="31_kf5aa"]
 [ext_resource type="PackedScene" uid="uid://bwaem4tkkdell" path="res://models/Furniture/Single Bed.glb" id="32_t5ykj"]
 [ext_resource type="PackedScene" uid="uid://hmnkhxwgplbf" path="res://models/Furniture/Single Door Upper Cabinet.glb" id="33_e755i"]
 [ext_resource type="PackedScene" uid="uid://cm53plk4xi5o6" path="res://models/Furniture/Small Wardrobe.glb" id="34_ro3en"]
+[ext_resource type="PackedScene" uid="uid://ck5nfwkjqp3dt" path="res://models/Furniture/TV1.tscn" id="34_vchkt"]
 [ext_resource type="PackedScene" uid="uid://57o60uxy5ud8" path="res://models/Furniture/Punching Bag.glb" id="35_od4ux"]
 [ext_resource type="PackedScene" uid="uid://dnkfo3c0dutfl" path="res://models/Furniture/Protein Powder.glb" id="36_xhfw6"]
 [ext_resource type="PackedScene" uid="uid://cyfiov3lykjou" path="res://models/Furniture/Large Book Shelf.glb" id="37_1epgm"]
@@ -44,6 +41,7 @@
 [ext_resource type="PackedScene" uid="uid://banjw1ws4uy1p" path="res://scenes/key/key_node.tscn" id="41_5poiv"]
 [ext_resource type="PackedScene" uid="uid://h17gik3mlbmr" path="res://scenes/door/door.tscn" id="43_chjal"]
 [ext_resource type="PackedScene" uid="uid://ch7hepokxkby7" path="res://assets/jumpscare/jumpscare.tscn" id="44_cjqg0"]
+[ext_resource type="PackedScene" uid="uid://cqbrv3fdckcfe" path="res://models/Furniture/Desk Lamp.glb" id="45_txyw0"]
 [ext_resource type="Script" uid="uid://chwlfbkqcl5xy" path="res://scenes/lock_door_trigger.gd" id="45_vchkt"]
 [ext_resource type="Script" uid="uid://t2jmwlpmew2r" path="res://scenes/finish_game_trigger.gd" id="46_txyw0"]
 
@@ -58,6 +56,125 @@ uv1_triplanar = true
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_choun"]
 albedo_texture = ExtResource("1_0wfyh")
 uv1_triplanar = true
+
+[sub_resource type="Animation" id="Animation_cjqg0"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:light_energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_vchkt"]
+resource_name = "flicker"
+length = 1.4666667
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:light_energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.4666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 6.971]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_txyw0"]
+_data = {
+&"RESET": SubResource("Animation_cjqg0"),
+&"flicker": SubResource("Animation_vchkt")
+}
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bjg73"]
+size = Vector3(1, 0.38671875, 1.1300049)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bu4jf"]
+size = Vector3(1, 1.1727295, 0.69421387)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nvyfr"]
+size = Vector3(0.62939453, 0.4767456, 0.11328125)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_vc5cj"]
+height = 0.50097656
+radius = 0.08154297
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_txyw0"]
+size = Vector3(0.3076172, 0.75097656, 0.29589844)
+
+[sub_resource type="Animation" id="Animation_txyw0"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:light_energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.32),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.527]
+}
+
+[sub_resource type="Animation" id="Animation_vc5cj"]
+resource_name = "flickerLantern"
+length = 2.7333333
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:light_energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.28, 1.97, 2.7333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 15.0, 5.108, 16.0, 1.965]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nvyfr"]
+_data = {
+&"RESET": SubResource("Animation_txyw0"),
+&"flickerLantern": SubResource("Animation_vc5cj")
+}
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vchkt"]
+size = Vector3(1.5751953, 0.7937012, 1.5822449)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_o7ddy"]
+size = Vector3(2.4111328, 0.23278809, 1.2705078)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ty1g6"]
+size = Vector3(2.3417969, 0.013305664, 1.0429688)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_j2jfr"]
+size = Vector3(2.2236328, 1.1455078, 0.44433594)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0loja"]
+size = Vector3(1.2426758, 0.56921387, 2.6396484)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ids8r"]
+size = Vector3(1.2529297, 1.2182617, 0.29296875)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dnhof"]
+size = Vector3(0.5114746, 0.88378906, 0.35839844)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1v6qk"]
+size = Vector3(3.7404785, 2.34375, 0.5058594)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_augu2"]
+size = Vector3(0.8239746, 1.7215576, 0.65478516)
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_tbgi4"]
 panorama = ExtResource("2_tipki")
@@ -138,10 +255,63 @@ last_lod = 0
 last_shadow_lod = 0
 lod0_range = 128.0
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ocvt1"]
+resource_name = "bush01"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 1)
+emission_enabled = true
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_186b4"]
+_surfaces = [{
+"aabb": AABB(-4.2, 0, -4.2, 8.4, 7.5, 8.4),
+"format": 34359742465,
+"index_count": 48,
+"index_data": PackedByteArray("AAABAAIAAQADAAIABAAFAAYABQAHAAYACAAJAAoACQALAAoADAANAA4ADQAPAA4AEAARABIAEQATABIAFAAVABYAFQAXABYAGAAZABoAGQAbABoAHAAdAB4AHQAfAB4A"),
+"name": "bush01",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 32,
+"vertex_data": PackedByteArray("ZmaGQAAAAAC0YWW8ZmaGQAAA8EA2YmW8ZmaGwAAAAACdXmW8ZmaGwAAA8EAjX2W8ZmaGwAAAAADqYmU8ZmaGwAAA8EBsY2U8ZmaGQAAAAADAXGU8ZmaGQAAA8EBEXWU8Q11lPAAAAABnZoZAqF5lPAAA8EBmZoZAvWFlPAAAADVmZobAJGNlPAAA8EBmZobAqF5lvAAAADVmZobAD2BlvAAA8EBmZobAV2BlvAAAAABnZoZAvWFlvAAA8EBmZoZAMbQ+wAAAAADNbz3AMbQ+wAAA8EDNbz3AzW89QAAAADUxtD5AzW89QAAA8EAztD5AMbQ+QAAAADXPbz1AMbQ+QAAA8EDNbz1Az289wAAAAAAutD7AzW89wAAA8EAxtD7Az289QP3/70AxtD7AM7Q+wAAA8EDNbz1AzW89QAAAADUutD7AMbQ+wAAAADXPbz1Az289wAAAADUztD5AzG89wAAA8EAxtD5ALrQ+QAAAADXNbz3AMbQ+QP3/70DNbz3A")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_5mcvh"]
+resource_name = "bush01"
+_surfaces = [{
+"aabb": AABB(-4.2, 0, -4.2, 8.4, 7.5, 8.4),
+"attribute_data": PackedByteArray("gK0wPD1zZj+ArTA84K3fPedqfT89c2Y/52p9P+Ct3z3VW30/PXNmP9VbfT8Art89wHE0PD1zZj/AcTQ8AK7fPYCtMDw9c2Y/gK0wPOCt3z3nan0/PXNmP+dqfT/grd891Vt9Pz1zZj/VW30/AK7fPcBxNDw9c2Y/wHE0PACu3z2ArTA8PXNmP4CtMDzgrd8952p9Pz1zZj/nan0/4K3fPdVbfT89c2Y/1Vt9PwCu3z3AcTQ8PXNmP8BxNDwArt89gK0wPOCt3z3nan0/4K3fPYCtMDw9c2Y/52p9Pz1zZj/VW30/PXNmP9VbfT8Art89wHE0PD1zZj/AcTQ8AK7fPQ=="),
+"format": 34359742487,
+"index_count": 48,
+"index_data": PackedByteArray("AAABAAIAAQADAAIABAAFAAYABQAHAAYACAAJAAoACQALAAoADAANAA4ADQAPAA4AEAARABIAEQATABIAFAAVABYAFQAXABYAGAAZABoAGQAbABoAHAAdAB4AHQAfAB4A"),
+"material": SubResource("StandardMaterial3D_ocvt1"),
+"name": "bush01",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 32,
+"vertex_data": PackedByteArray("ZmaGQAAAAAC0YWW8ZmaGQAAA8EA2YmW8ZmaGwAAAAACdXmW8ZmaGwAAA8EAjX2W8ZmaGwAAAAADqYmU8ZmaGwAAA8EBsY2U8ZmaGQAAAAADAXGU8ZmaGQAAA8EBEXWU8Q11lPAAAAABnZoZAqF5lPAAA8EBmZoZAvWFlPAAAADVmZobAJGNlPAAA8EBmZobAqF5lvAAAADVmZobAD2BlvAAA8EBmZobAV2BlvAAAAABnZoZAvWFlvAAA8EBmZoZAMbQ+wAAAAADNbz3AMbQ+wAAA8EDNbz3AzW89QAAAADUxtD5AzW89QAAA8EAztD5AMbQ+QAAAADXPbz1AMbQ+QAAA8EDNbz1Az289wAAAAAAutD7AzW89wAAA8EAxtD7Az289QP3/70AxtD7AM7Q+wAAA8EDNbz1AzW89QAAAADUutD7AMbQ+wAAAADXPbz1Az289wAAAADUztD5AzG89wAAA8EAxtD5ALrQ+QAAAADXNbz3AMbQ+QP3/70DNbz3AAAAAAAAA/78AAAAAAAD/vwAAAAAAAP+/AAAAAAAA/7//f/9/AAD/P/9//38AAP8//3//fwAA/z//f/9/AAD/P/7//3///////v//f//////+//9///////7//3//////AAD/f///AAAAAP9///8AAAAA/3///wAAAAD/f////n//P/9//7//v/8//3//v/+//z//f/+//7//P/9//7//v////z//v/8/////P/+//z////8//7//P////z//v/8/AAD/P/8//78AAP8//z//vwAA/z//P/+/AAD/P/8//7//v/9//z//P/+//3//P/8//7//f/8//z//v/9//z//Pw==")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_186b4")
+
+[sub_resource type="PackedScene" id="PackedScene_vc5cj"]
+_bundled = {
+"conn_count": 0,
+"conns": PackedInt32Array(),
+"editable_instances": [],
+"id_paths": [],
+"names": PackedStringArray("bush01", "Node3D", "transform", "mesh", "skeleton", "MeshInstance3D"),
+"node_count": 2,
+"node_ids": PackedInt32Array(1188611351, 1112489852),
+"node_paths": [],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 0, 0, 0, 0, 5, 0, -1, 3, 2, 0, 3, 1, 4, 2, 0),
+"variants": [Transform3D(1, 0, 0, 0, 1, 1.6292067e-07, 0, -1.6292067e-07, 1, 0, 0, 0), SubResource("ArrayMesh_5mcvh"), NodePath("")],
+"version": 3
+}
+
 [sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_choun"]
 name = "bush01"
 id = 1
-scene_file = ExtResource("3_o6xl0")
+scene_file = SubResource("PackedScene_vc5cj")
 density = 0.01889645
 last_lod = 0
 last_shadow_lod = 0
@@ -161,43 +331,6 @@ normal_texture = ExtResource("7_85g3d")
 [sub_resource type="Terrain3DAssets" id="Terrain3DAssets_trceg"]
 mesh_list = Array[Terrain3DMeshAsset]([SubResource("Terrain3DMeshAsset_85g3d"), SubResource("Terrain3DMeshAsset_choun")])
 texture_list = Array[Terrain3DTextureAsset]([SubResource("Terrain3DTextureAsset_eb6dy"), SubResource("Terrain3DTextureAsset_ya4ey")])
-
-[sub_resource type="Animation" id="Animation_chjal"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:light_energy")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [2.059]
-}
-
-[sub_resource type="Animation" id="Animation_cjqg0"]
-resource_name = "flicker"
-loop_mode = 2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:light_energy")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [2.059, 0.213]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_vchkt"]
-_data = {
-&"RESET": SubResource("Animation_chjal"),
-&"flicker": SubResource("Animation_cjqg0")
-}
 
 [sub_resource type="GDScript" id="GDScript_5he1u"]
 script/source = "extends Area3D
@@ -237,7 +370,7 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 30.5
 transform = Transform3D(0.014990862, 0, -0.00052348187, 0, 0.015, 0, 0.00052348187, 0, 0.014990862, 75.74213, 0.5538572, -58.516045)
 
 [node name="Key Node2" parent="Keys" unique_id=1686847541 instance=ExtResource("41_5poiv")]
-transform = Transform3D(0.014990862, 0, -0.00052348187, 0, 0.015, 0, 0.00052348187, 0, 0.014990862, 42.68351, 0.5538572, -46.650837)
+transform = Transform3D(0.014990862, 0, -0.00052348187, 0, 0.015, 0, 0.00052348187, 0, 0.014990862, 43.483707, 0.55385745, -42.393555)
 
 [node name="Doors" type="Node3D" parent="." unique_id=29149190]
 
@@ -263,9 +396,9 @@ size = Vector3(20, 1, 21.01123)
 material = SubResource("StandardMaterial3D_jyhfs")
 
 [node name="CSGBox3D37" type="CSGBox3D" parent="Map/stage/Building1" unique_id=1700420211]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52.520813, 5.5306606, -58.886005)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52.520813, 5.5306606, -59.027058)
 use_collision = true
-size = Vector3(16.30127, 1.9989014, 22.539795)
+size = Vector3(16.30127, 1.9989014, 22.25769)
 material = SubResource("StandardMaterial3D_jyhfs")
 
 [node name="CSGBox3D30" type="CSGBox3D" parent="Map/stage/Building1" unique_id=1443391490]
@@ -699,34 +832,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 8.351872e-23, 0, 8.351872e-23, 1, 5.67761
 operation = 2
 size = Vector3(3.0056152, 2.5, 1.0683594)
 
-[node name="SpotLight3D" type="SpotLight3D" parent="Map/stage/Building1" unique_id=2053630475]
-transform = Transform3D(0.04014074, 0.93485665, -0.35274884, -0.105699025, 0.35502538, 0.92886204, 0.9935877, -3.749332e-09, 0.113064416, 47.98259, 3.9956555, -34.837723)
-light_color = Color(1, 0.6627451, 0.3137255, 1)
-light_energy = 9.949
-shadow_enabled = true
-spot_range = 5.964
-
-[node name="SpotLight3D5" type="SpotLight3D" parent="Map/stage/Building1" unique_id=551719724]
-transform = Transform3D(-0.08894025, 0.6174205, 0.78158915, -0.06980826, -0.7866333, 0.6134614, 0.9935877, 2.9796427e-08, 0.113064416, 59.338272, 4.3206663, -32.120255)
-light_color = Color(1, 0.6627451, 0.3137255, 1)
-light_energy = 16.0
-shadow_enabled = true
-spot_range = 5.964
-
-[node name="SpotLight3D2" type="SpotLight3D" parent="Map/stage/Building1" unique_id=925575291]
-transform = Transform3D(0.04014074, 0.93485665, -0.35274884, -0.105699025, 0.35502538, 0.92886204, 0.9935877, -3.749332e-09, 0.113064416, 56.147034, 4.7609596, -36.642273)
-light_color = Color(1, 0.6627451, 0.3137255, 1)
-light_energy = 9.949
-shadow_enabled = true
-spot_range = 5.964
-
-[node name="SpotLight3D4" type="SpotLight3D" parent="Map/stage/Building1" unique_id=1122658776]
-transform = Transform3D(-0.08716038, 0.6369667, 0.7659482, -0.07201824, -0.77089137, 0.63288224, 0.9935877, 1.4997308e-08, 0.11306441, 54.109207, 3.9956555, -44.17295)
-light_color = Color(1, 0.6627451, 0.3137255, 1)
-light_energy = 9.949
-shadow_enabled = true
-spot_range = 5.964
-
 [node name="CSGBox3D18" type="CSGBox3D" parent="Map/stage/Building1" unique_id=1169365744]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.36848, 7.7049446, -46.237118)
 size = Vector3(6.5126953, 2.5532227, 0.47753906)
@@ -757,255 +862,927 @@ transform = Transform3D(-0.8660254, -0.5, 8.742278e-08, -0.5, 0.8660254, 0, -7.5
 operation = 2
 size = Vector3(8, 2.364502, 1)
 
-[node name="OmniLight3D" type="OmniLight3D" parent="Map/stage/Building1" unique_id=1259464471]
+[node name="Foiliage" type="Node3D" parent="Map/stage" unique_id=1203785890]
+
+[node name="Trees" type="Node3D" parent="Map/stage/Foiliage" unique_id=1260401310]
+
+[node name="tree20" parent="Map/stage/Foiliage/Trees" unique_id=1262770455 instance=ExtResource("10_ya4ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.821316, 0, -98.039665)
+
+[node name="tree21" parent="Map/stage/Foiliage/Trees" unique_id=1741995370 instance=ExtResource("10_ya4ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.957184, 0, -100.71346)
+
+[node name="tree22" parent="Map/stage/Foiliage/Trees" unique_id=921954829 instance=ExtResource("10_ya4ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.80078, 0, -100.082954)
+
+[node name="tree31" parent="Map/stage/Foiliage/Trees" unique_id=380656202 instance=ExtResource("10_ya4ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.276512, 0, -109.279915)
+
+[node name="tree32" parent="Map/stage/Foiliage/Trees" unique_id=694865939 instance=ExtResource("10_ya4ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 63.151733, 0, -109.279915)
+
+[node name="tree33" parent="Map/stage/Foiliage/Trees" unique_id=2130035242 instance=ExtResource("10_ya4ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74.67429, 0, -109.279915)
+
+[node name="tree34" parent="Map/stage/Foiliage/Trees" unique_id=980290244 instance=ExtResource("10_ya4ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 85.973114, 0, -94.04041)
+
+[node name="tree35" parent="Map/stage/Foiliage/Trees" unique_id=587412132 instance=ExtResource("10_ya4ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.37448, 0, -97.37565)
+
+[node name="tree23" parent="Map/stage/Foiliage/Trees" unique_id=2051395624 instance=ExtResource("10_ya4ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96.33263, 0, -80.03856)
+
+[node name="tree24" parent="Map/stage/Foiliage/Trees" unique_id=1928160330 instance=ExtResource("10_ya4ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96.33263, 0, -41.65696)
+
+[node name="tree36" parent="Map/stage/Foiliage/Trees" unique_id=143521080 instance=ExtResource("10_ya4ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 86.31328, 1.9073486e-06, -35.94023)
+
+[node name="tree37" parent="Map/stage/Foiliage/Trees" unique_id=245190836 instance=ExtResource("10_ya4ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96.58054, 1.9073486e-06, -36.91127)
+
+[node name="tree25" parent="Map/stage/Foiliage/Trees" unique_id=964694337 instance=ExtResource("10_ya4ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96.33263, 0, -66.31381)
+
+[node name="tree26" parent="Map/stage/Foiliage/Trees" unique_id=1120226667 instance=ExtResource("10_ya4ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 77.3947, 0, -16.937721)
+
+[node name="tree38" parent="Map/stage/Foiliage/Trees" unique_id=918947953 instance=ExtResource("10_ya4ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 77.3947, 0, -30.25157)
+
+[node name="tree39" parent="Map/stage/Foiliage/Trees" unique_id=2061445836 instance=ExtResource("10_ya4ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60.4554, 0, -18.181318)
+
+[node name="tree40" parent="Map/stage/Foiliage/Trees" unique_id=304697842 instance=ExtResource("10_ya4ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.762196, 0, -77.38002)
+
+[node name="tree41" parent="Map/stage/Foiliage/Trees" unique_id=1108424769 instance=ExtResource("10_ya4ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.762196, 0, -62.820488)
+
+[node name="tree42" parent="Map/stage/Foiliage/Trees" unique_id=1825177391 instance=ExtResource("10_ya4ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.183721, 0, -54.043713)
+
+[node name="tree43" parent="Map/stage/Foiliage/Trees" unique_id=1540828276 instance=ExtResource("10_ya4ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.762196, 0, -42.622913)
+
+[node name="tree44" parent="Map/stage/Foiliage/Trees" unique_id=692268344 instance=ExtResource("10_ya4ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.765928, 0, -45.68494)
+
+[node name="tree45" parent="Map/stage/Foiliage/Trees" unique_id=1058197432 instance=ExtResource("10_ya4ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.12008, 0, -57.80481)
+
+[node name="tree46" parent="Map/stage/Foiliage/Trees" unique_id=1417362101 instance=ExtResource("10_ya4ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.182678, 0, -69.95378)
+
+[node name="tree47" parent="Map/stage/Foiliage/Trees" unique_id=2035497073 instance=ExtResource("10_ya4ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.182678, 0, -77.63275)
+
+[node name="tree48" parent="Map/stage/Foiliage/Trees" unique_id=1214472502 instance=ExtResource("10_ya4ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.182678, 0, -91.594536)
+
+[node name="tree49" parent="Map/stage/Foiliage/Trees" unique_id=1304890382 instance=ExtResource("10_ya4ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.182678, 0, -91.594536)
+
+[node name="tree27" parent="Map/stage/Foiliage/Trees" unique_id=330603972 instance=ExtResource("10_ya4ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 89.20046, 0, -22.81559)
+
+[node name="tree28" parent="Map/stage/Foiliage/Trees" unique_id=1942260808 instance=ExtResource("10_ya4ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 102.06137, 3.3630753, -22.81559)
+
+[node name="tree30" parent="Map/stage/Foiliage/Trees" unique_id=240833026 instance=ExtResource("10_ya4ey")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 97.34085, -38.519432, -51.690166)
+
+[node name="Grass" type="Node3D" parent="Map/stage/Foiliage" unique_id=624606796]
+
+[node name="GrassPlant" parent="Map/stage/Foiliage/Grass" unique_id=39941735 instance=ExtResource("9_vchkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.00403, 0.03300655, -36.93824)
+
+[node name="GrassPlant2" parent="Map/stage/Foiliage/Grass" unique_id=506290096 instance=ExtResource("9_vchkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.425552, 0.03300655, -38.534184)
+
+[node name="GrassPlant3" parent="Map/stage/Foiliage/Grass" unique_id=840888331 instance=ExtResource("9_vchkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.771214, 0.03300655, -38.087746)
+
+[node name="GrassPlant4" parent="Map/stage/Foiliage/Grass" unique_id=445729122 instance=ExtResource("9_vchkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.17122, 0.03300655, -36.6158)
+
+[node name="GrassPlant5" parent="Map/stage/Foiliage/Grass" unique_id=929634582 instance=ExtResource("9_vchkt")]
+transform = Transform3D(0.57065624, 0, 0.82118905, 0, 1, 0, -0.82118905, 0, 0.57065624, 37.879997, 0.03300655, -39.498497)
+
+[node name="GrassPlant6" parent="Map/stage/Foiliage/Grass" unique_id=830200380 instance=ExtResource("9_vchkt")]
+transform = Transform3D(0.57065624, 0, 0.82118905, 0, 1, 0, -0.82118905, 0, 0.57065624, 36.239315, 0.03300655, -39.934193)
+
+[node name="GrassPlant7" parent="Map/stage/Foiliage/Grass" unique_id=719376818 instance=ExtResource("9_vchkt")]
+transform = Transform3D(0.57065624, 0, 0.82118905, 0, 1, 0, -0.82118905, 0, 0.57065624, 37.373833, 0.03300655, -40.784473)
+
+[node name="GrassPlant8" parent="Map/stage/Foiliage/Grass" unique_id=1005632466 instance=ExtResource("9_vchkt")]
+transform = Transform3D(0.57065624, 0, 0.82118905, 0, 1, 0, -0.82118905, 0, 0.57065624, 38.81085, 0.03300655, -40.27298)
+
+[node name="GrassPlant9" parent="Map/stage/Foiliage/Grass" unique_id=1545996621 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 40.08125, 0.03300655, -38.496273)
+
+[node name="GrassPlant10" parent="Map/stage/Foiliage/Grass" unique_id=1365567946 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 39.395504, 0.03300655, -36.943394)
+
+[node name="GrassPlant11" parent="Map/stage/Foiliage/Grass" unique_id=696336487 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 38.732162, 0.03300655, -38.196426)
+
+[node name="GrassPlant12" parent="Map/stage/Foiliage/Grass" unique_id=2008105064 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 39.461082, 0.03300655, -39.53632)
+
+[node name="GrassPlant13" parent="Map/stage/Foiliage/Grass" unique_id=1303397498 instance=ExtResource("9_vchkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.760124, 0.03300655, -41.878017)
+
+[node name="GrassPlant14" parent="Map/stage/Foiliage/Grass" unique_id=29790734 instance=ExtResource("9_vchkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.18165, 0.03300655, -43.47396)
+
+[node name="GrassPlant15" parent="Map/stage/Foiliage/Grass" unique_id=1067325272 instance=ExtResource("9_vchkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.527306, 0.03300655, -43.027523)
+
+[node name="GrassPlant16" parent="Map/stage/Foiliage/Grass" unique_id=1083617482 instance=ExtResource("9_vchkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.927315, 0.03300655, -41.555576)
+
+[node name="GrassPlant17" parent="Map/stage/Foiliage/Grass" unique_id=305908626 instance=ExtResource("9_vchkt")]
+transform = Transform3D(0.57065624, 0, 0.82118905, 0, 1, 0, -0.82118905, 0, 0.57065624, 37.636093, 0.03300655, -44.438274)
+
+[node name="GrassPlant18" parent="Map/stage/Foiliage/Grass" unique_id=1915295003 instance=ExtResource("9_vchkt")]
+transform = Transform3D(0.57065624, 0, 0.82118905, 0, 1, 0, -0.82118905, 0, 0.57065624, 35.995407, 0.03300655, -44.87397)
+
+[node name="GrassPlant19" parent="Map/stage/Foiliage/Grass" unique_id=605926964 instance=ExtResource("9_vchkt")]
+transform = Transform3D(0.57065624, 0, 0.82118905, 0, 1, 0, -0.82118905, 0, 0.57065624, 38.56694, 0.03300655, -45.212757)
+
+[node name="GrassPlant20" parent="Map/stage/Foiliage/Grass" unique_id=1457799426 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 39.83734, 0.03300655, -43.43605)
+
+[node name="GrassPlant21" parent="Map/stage/Foiliage/Grass" unique_id=726637456 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 39.151596, 0.03300655, -41.88317)
+
+[node name="GrassPlant22" parent="Map/stage/Foiliage/Grass" unique_id=1169032856 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 38.48826, 0.03300655, -43.136204)
+
+[node name="GrassPlant23" parent="Map/stage/Foiliage/Grass" unique_id=1792586212 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 39.21718, 0.03300655, -44.476097)
+
+[node name="GrassPlant24" parent="Map/stage/Foiliage/Grass" unique_id=399279712 instance=ExtResource("9_vchkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.80131, 0.03300655, -46.127686)
+
+[node name="GrassPlant25" parent="Map/stage/Foiliage/Grass" unique_id=1210875396 instance=ExtResource("9_vchkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.222836, 0.03300655, -47.72363)
+
+[node name="GrassPlant26" parent="Map/stage/Foiliage/Grass" unique_id=72380287 instance=ExtResource("9_vchkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.568497, 0.03300655, -47.27719)
+
+[node name="GrassPlant27" parent="Map/stage/Foiliage/Grass" unique_id=533927821 instance=ExtResource("9_vchkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.968502, 0.03300655, -45.805244)
+
+[node name="GrassPlant28" parent="Map/stage/Foiliage/Grass" unique_id=1176756449 instance=ExtResource("9_vchkt")]
+transform = Transform3D(0.57065624, 0, 0.82118905, 0, 1, 0, -0.82118905, 0, 0.57065624, 37.67728, 0.03300655, -48.687943)
+
+[node name="GrassPlant29" parent="Map/stage/Foiliage/Grass" unique_id=1490907148 instance=ExtResource("9_vchkt")]
+transform = Transform3D(0.57065624, 0, 0.82118905, 0, 1, 0, -0.82118905, 0, 0.57065624, 36.0366, 0.03300655, -49.12364)
+
+[node name="GrassPlant30" parent="Map/stage/Foiliage/Grass" unique_id=1123694708 instance=ExtResource("9_vchkt")]
+transform = Transform3D(0.57065624, 0, 0.82118905, 0, 1, 0, -0.82118905, 0, 0.57065624, 37.171116, 0.03300655, -49.97392)
+
+[node name="GrassPlant31" parent="Map/stage/Foiliage/Grass" unique_id=531747716 instance=ExtResource("9_vchkt")]
+transform = Transform3D(0.57065624, 0, 0.82118905, 0, 1, 0, -0.82118905, 0, 0.57065624, 38.60813, 0.03300655, -49.462425)
+
+[node name="GrassPlant32" parent="Map/stage/Foiliage/Grass" unique_id=482850888 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 39.878532, 0.03300655, -47.68572)
+
+[node name="GrassPlant33" parent="Map/stage/Foiliage/Grass" unique_id=347474019 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 39.192787, 0.03300655, -46.13284)
+
+[node name="GrassPlant34" parent="Map/stage/Foiliage/Grass" unique_id=1203916970 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 38.529446, 0.03300655, -47.38587)
+
+[node name="GrassPlant35" parent="Map/stage/Foiliage/Grass" unique_id=620556572 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 39.258366, 0.03300655, -48.725765)
+
+[node name="GrassPlant36" parent="Map/stage/Foiliage/Grass" unique_id=1596275297 instance=ExtResource("9_vchkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.557407, 0.03300655, -51.067463)
+
+[node name="GrassPlant37" parent="Map/stage/Foiliage/Grass" unique_id=188696771 instance=ExtResource("9_vchkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.97893, 0.03300655, -52.663406)
+
+[node name="GrassPlant38" parent="Map/stage/Foiliage/Grass" unique_id=1703475044 instance=ExtResource("9_vchkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.32459, 0.03300655, -52.21697)
+
+[node name="GrassPlant39" parent="Map/stage/Foiliage/Grass" unique_id=786019252 instance=ExtResource("9_vchkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.724598, 0.03300655, -50.74502)
+
+[node name="GrassPlant40" parent="Map/stage/Foiliage/Grass" unique_id=982218374 instance=ExtResource("9_vchkt")]
+transform = Transform3D(0.57065624, 0, 0.82118905, 0, 1, 0, -0.82118905, 0, 0.57065624, 37.433376, 0.03300655, -53.62772)
+
+[node name="GrassPlant41" parent="Map/stage/Foiliage/Grass" unique_id=1356320710 instance=ExtResource("9_vchkt")]
+transform = Transform3D(0.57065624, 0, 0.82118905, 0, 1, 0, -0.82118905, 0, 0.57065624, 35.79269, 0.03300655, -54.063416)
+
+[node name="GrassPlant42" parent="Map/stage/Foiliage/Grass" unique_id=62498637 instance=ExtResource("9_vchkt")]
+transform = Transform3D(0.57065624, 0, 0.82118905, 0, 1, 0, -0.82118905, 0, 0.57065624, 38.364223, 0.03300655, -54.402203)
+
+[node name="GrassPlant43" parent="Map/stage/Foiliage/Grass" unique_id=1073432375 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 39.634624, 0.03300655, -52.625496)
+
+[node name="GrassPlant44" parent="Map/stage/Foiliage/Grass" unique_id=871334231 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 38.94888, 0.03300655, -51.072617)
+
+[node name="GrassPlant45" parent="Map/stage/Foiliage/Grass" unique_id=1660995715 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 38.28554, 0.03300655, -52.32565)
+
+[node name="GrassPlant46" parent="Map/stage/Foiliage/Grass" unique_id=1051507998 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 39.01446, 0.03300655, -53.665543)
+
+[node name="GrassPlant47" parent="Map/stage/Foiliage/Grass" unique_id=533495455 instance=ExtResource("9_vchkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.06659, 0.03300655, -24.215057)
+
+[node name="GrassPlant48" parent="Map/stage/Foiliage/Grass" unique_id=763798458 instance=ExtResource("9_vchkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.488113, 0.03300655, -25.811)
+
+[node name="GrassPlant49" parent="Map/stage/Foiliage/Grass" unique_id=1266840696 instance=ExtResource("9_vchkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.833775, 0.03300655, -25.364563)
+
+[node name="GrassPlant50" parent="Map/stage/Foiliage/Grass" unique_id=1506159839 instance=ExtResource("9_vchkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.23378, 0.03300655, -23.892616)
+
+[node name="GrassPlant51" parent="Map/stage/Foiliage/Grass" unique_id=1820868072 instance=ExtResource("9_vchkt")]
+transform = Transform3D(0.57065624, 0, 0.82118905, 0, 1, 0, -0.82118905, 0, 0.57065624, 37.94256, 0.03300655, -26.775314)
+
+[node name="GrassPlant52" parent="Map/stage/Foiliage/Grass" unique_id=1813566354 instance=ExtResource("9_vchkt")]
+transform = Transform3D(0.57065624, 0, 0.82118905, 0, 1, 0, -0.82118905, 0, 0.57065624, 36.301876, 0.03300655, -27.21101)
+
+[node name="GrassPlant53" parent="Map/stage/Foiliage/Grass" unique_id=1125535044 instance=ExtResource("9_vchkt")]
+transform = Transform3D(0.57065624, 0, 0.82118905, 0, 1, 0, -0.82118905, 0, 0.57065624, 37.436394, 0.03300655, -28.06129)
+
+[node name="GrassPlant54" parent="Map/stage/Foiliage/Grass" unique_id=1433386147 instance=ExtResource("9_vchkt")]
+transform = Transform3D(0.57065624, 0, 0.82118905, 0, 1, 0, -0.82118905, 0, 0.57065624, 38.87341, 0.03300655, -27.549797)
+
+[node name="GrassPlant55" parent="Map/stage/Foiliage/Grass" unique_id=1542448349 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 40.14381, 0.03300655, -25.77309)
+
+[node name="GrassPlant56" parent="Map/stage/Foiliage/Grass" unique_id=1992353374 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 39.458065, 0.03300655, -24.220211)
+
+[node name="GrassPlant57" parent="Map/stage/Foiliage/Grass" unique_id=1224289808 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 38.794724, 0.03300655, -25.473244)
+
+[node name="GrassPlant70" parent="Map/stage/Foiliage/Grass" unique_id=994759660 instance=ExtResource("9_vchkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.17155, 0.03300655, -37.395523)
+
+[node name="GrassPlant71" parent="Map/stage/Foiliage/Grass" unique_id=1655168316 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 35.481586, 0.03300655, -37.804047)
+
+[node name="GrassPlant72" parent="Map/stage/Foiliage/Grass" unique_id=106169434 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 34.79584, 0.03300655, -36.251167)
+
+[node name="GrassPlant73" parent="Map/stage/Foiliage/Grass" unique_id=1579531557 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 34.1325, 0.03300655, -37.504204)
+
+[node name="GrassPlant74" parent="Map/stage/Foiliage/Grass" unique_id=1243064151 instance=ExtResource("9_vchkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.53893, 0.03300655, -39.205635)
+
+[node name="GrassPlant75" parent="Map/stage/Foiliage/Grass" unique_id=1058142348 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 35.848965, 0.03300655, -39.61416)
+
+[node name="GrassPlant76" parent="Map/stage/Foiliage/Grass" unique_id=160264678 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 35.16322, 0.03300655, -38.06128)
+
+[node name="GrassPlant77" parent="Map/stage/Foiliage/Grass" unique_id=1852040292 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 34.499878, 0.03300655, -39.314316)
+
+[node name="GrassPlant78" parent="Map/stage/Foiliage/Grass" unique_id=193252081 instance=ExtResource("9_vchkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.56565, 0.03300655, -37.748745)
+
+[node name="GrassPlant79" parent="Map/stage/Foiliage/Grass" unique_id=1724879369 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 32.875687, 0.03300655, -38.15727)
+
+[node name="GrassPlant80" parent="Map/stage/Foiliage/Grass" unique_id=362678204 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 32.18994, 0.03300655, -36.60439)
+
+[node name="GrassPlant81" parent="Map/stage/Foiliage/Grass" unique_id=758884011 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 31.5266, 0.03300655, -37.857426)
+
+[node name="GrassPlant58" parent="Map/stage/Foiliage/Grass" unique_id=472186422 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 39.523643, 0.03300655, -26.813137)
+
+[node name="GrassPlant59" parent="Map/stage/Foiliage/Grass" unique_id=1758544571 instance=ExtResource("9_vchkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.822685, 0.03300655, -29.154835)
+
+[node name="GrassPlant60" parent="Map/stage/Foiliage/Grass" unique_id=6743607 instance=ExtResource("9_vchkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.24421, 0.03300655, -30.750778)
+
+[node name="GrassPlant61" parent="Map/stage/Foiliage/Grass" unique_id=1568298050 instance=ExtResource("9_vchkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.589867, 0.03300655, -30.30434)
+
+[node name="GrassPlant62" parent="Map/stage/Foiliage/Grass" unique_id=608518593 instance=ExtResource("9_vchkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.989876, 0.03300655, -28.832394)
+
+[node name="GrassPlant63" parent="Map/stage/Foiliage/Grass" unique_id=530147836 instance=ExtResource("9_vchkt")]
+transform = Transform3D(0.57065624, 0, 0.82118905, 0, 1, 0, -0.82118905, 0, 0.57065624, 37.698654, 0.03300655, -31.715092)
+
+[node name="GrassPlant64" parent="Map/stage/Foiliage/Grass" unique_id=917175274 instance=ExtResource("9_vchkt")]
+transform = Transform3D(0.57065624, 0, 0.82118905, 0, 1, 0, -0.82118905, 0, 0.57065624, 36.05797, 0.03300655, -32.150787)
+
+[node name="GrassPlant65" parent="Map/stage/Foiliage/Grass" unique_id=2039484335 instance=ExtResource("9_vchkt")]
+transform = Transform3D(0.57065624, 0, 0.82118905, 0, 1, 0, -0.82118905, 0, 0.57065624, 38.6295, 0.03300655, -32.489574)
+
+[node name="GrassPlant66" parent="Map/stage/Foiliage/Grass" unique_id=1706388630 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 39.899902, 0.03300655, -30.712868)
+
+[node name="GrassPlant67" parent="Map/stage/Foiliage/Grass" unique_id=225391276 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 39.214157, 0.03300655, -29.159988)
+
+[node name="GrassPlant68" parent="Map/stage/Foiliage/Grass" unique_id=1846348234 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 38.55082, 0.03300655, -30.413021)
+
+[node name="GrassPlant69" parent="Map/stage/Foiliage/Grass" unique_id=763202837 instance=ExtResource("9_vchkt")]
+transform = Transform3D(-0.72236395, 0, 0.69151306, 0, 1, 0, -0.69151306, 0, -0.72236395, 39.27974, 0.03300655, -31.752914)
+
+[node name="Lights" type="Node3D" parent="Map/stage" unique_id=2075391487]
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Map/stage/Lights" unique_id=2053630475]
+transform = Transform3D(0.04014074, 0.93485665, -0.35274884, -0.105699025, 0.35502538, 0.92886204, 0.9935877, -3.749332e-09, 0.113064416, 47.98259, 3.9956555, -34.837723)
+light_color = Color(1, 0.6627451, 0.3137255, 1)
+light_energy = 9.949
+shadow_enabled = true
+spot_range = 5.964
+
+[node name="SpotLight3D5" type="SpotLight3D" parent="Map/stage/Lights" unique_id=551719724]
+transform = Transform3D(-0.08894025, 0.6174205, 0.78158915, -0.06980826, -0.7866333, 0.6134614, 0.9935877, 2.9992126e-08, 0.11306441, 59.338272, 4.3206663, -32.120255)
+light_color = Color(1, 0.6627451, 0.3137255, 1)
+light_energy = 16.0
+shadow_enabled = true
+spot_range = 5.964
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="Map/stage/Lights" unique_id=925575291]
+transform = Transform3D(0.04014074, 0.93485665, -0.35274884, -0.105699025, 0.35502538, 0.92886204, 0.9935877, -3.749332e-09, 0.113064416, 56.147034, 4.7609596, -36.642273)
+light_color = Color(1, 0.6627451, 0.3137255, 1)
+light_energy = 9.949
+shadow_enabled = true
+spot_range = 5.964
+
+[node name="SpotLight3D4" type="SpotLight3D" parent="Map/stage/Lights" unique_id=1122658776]
+transform = Transform3D(-0.08716038, 0.6369667, 0.7659482, -0.07201824, -0.77089137, 0.63288224, 0.9935877, 1.4997328e-08, 0.11306441, 54.109207, 3.9956555, -44.17295)
+light_color = Color(1, 0.6627451, 0.3137255, 1)
+light_energy = 9.949
+shadow_enabled = true
+spot_range = 5.964
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Map/stage/Lights" unique_id=1259464471]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.09682, 5.6170487, -44.70335)
 light_color = Color(0.83284235, 0.6137514, 0, 1)
 light_energy = 16.0
 shadow_enabled = true
 
-[node name="OmniLight3D7" type="OmniLight3D" parent="Map/stage/Building1" unique_id=1348262713]
+[node name="OmniLight3D7" type="OmniLight3D" parent="Map/stage/Lights" unique_id=1348262713]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.71796, 4.6419687, -47.04931)
 light_color = Color(0.83284235, 0.6137514, 0, 1)
 light_energy = 16.0
 shadow_enabled = true
 
-[node name="OmniLight3D8" type="OmniLight3D" parent="Map/stage/Building1" unique_id=548911083]
+[node name="OmniLight3D8" type="OmniLight3D" parent="Map/stage/Lights" unique_id=548911083]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.71796, 4.6419687, -47.04931)
 light_color = Color(0.83284235, 0.6137514, 0, 1)
 light_energy = 16.0
 shadow_enabled = true
 
-[node name="OmniLight3D9" type="OmniLight3D" parent="Map/stage/Building1" unique_id=980468408]
+[node name="OmniLight3D9" type="OmniLight3D" parent="Map/stage/Lights" unique_id=980468408]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.71796, 4.6419687, -42.36564)
 light_color = Color(0.83284235, 0.6137514, 0, 1)
 light_energy = 16.0
 shadow_enabled = true
 
-[node name="OmniLight3D2" type="OmniLight3D" parent="Map/stage/Building1" unique_id=230061502]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.68627, 4.1496253, -44.70335)
+[node name="OmniLight3D2" type="OmniLight3D" parent="Map/stage/Lights" unique_id=230061502]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.68627, 4.542962, -46.85682)
 light_color = Color(0.83284235, 0.6137514, 0, 1)
 light_energy = 16.0
 shadow_enabled = true
+omni_range = 5.061
+omni_attenuation = 2.0
 
-[node name="OmniLight3D3" type="OmniLight3D" parent="Map/stage/Building1" unique_id=880794774]
+[node name="OmniLight3D3" type="OmniLight3D" parent="Map/stage/Lights" unique_id=880794774]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.33838, 6.8309183, -35.78702)
 light_color = Color(0.83284235, 0.6137514, 0, 1)
 light_energy = 16.0
 shadow_enabled = true
 
-[node name="OmniLight3D4" type="OmniLight3D" parent="Map/stage/Building1" unique_id=1201620916]
+[node name="OmniLight3D4" type="OmniLight3D" parent="Map/stage/Lights" unique_id=1201620916]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.33838, 6.8309183, -32.88666)
 light_color = Color(0.83284235, 0.6137514, 0, 1)
 light_energy = 16.0
 shadow_enabled = true
 
-[node name="OmniLight3D5" type="OmniLight3D" parent="Map/stage/Building1" unique_id=1828664483]
+[node name="OmniLight3D5" type="OmniLight3D" parent="Map/stage/Lights" unique_id=1828664483]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.249676, 4.551023, -33.474747)
 light_color = Color(0.83284235, 0.6137514, 0, 1)
 light_energy = 16.0
 shadow_enabled = true
 
-[node name="OmniLight3D6" type="OmniLight3D" parent="Map/stage/Building1" unique_id=1804665310]
+[node name="OmniLight3D6" type="OmniLight3D" parent="Map/stage/Lights" unique_id=1804665310]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.907265, 3.499137, -35.85059)
 light_color = Color(0.83284235, 0.6137514, 0, 1)
 light_energy = 16.0
 shadow_enabled = true
 
-[node name="Foiliage" type="Node3D" parent="Map/stage" unique_id=1203785890]
+[node name="OmniLight3D10" type="OmniLight3D" parent="Map/stage/Lights" unique_id=1550312829]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.91438, 1.2537017, -59.545483)
+light_color = Color(0.51515454, 0.16002369, 0.1404852, 1)
+light_energy = 0.0
+shadow_enabled = true
+omni_range = 10.0
+omni_attenuation = 2.0
 
-[node name="tree20" parent="Map/stage/Foiliage" unique_id=1262770455 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.821316, 0, -98.039665)
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Map/stage/Lights/OmniLight3D10" unique_id=419310722]
+libraries/ = SubResource("AnimationLibrary_txyw0")
+autoplay = &"flicker"
 
-[node name="tree21" parent="Map/stage/Foiliage" unique_id=1741995370 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.957184, 0, -100.71346)
+[node name="OmniLight3D12" type="OmniLight3D" parent="Map/stage/Lights" unique_id=1591103687]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.469536, 4.1921906, -53.0666)
+light_color = Color(0.8712964, 0.40473092, 0.3082592, 1)
+light_energy = 2.059
+shadow_enabled = true
+omni_range = 0.997
+omni_attenuation = 2.0
 
-[node name="tree22" parent="Map/stage/Foiliage" unique_id=921954829 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.80078, 0, -100.082954)
-
-[node name="tree31" parent="Map/stage/Foiliage" unique_id=380656202 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.276512, 0, -109.279915)
-
-[node name="tree32" parent="Map/stage/Foiliage" unique_id=694865939 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 63.151733, 0, -109.279915)
-
-[node name="tree33" parent="Map/stage/Foiliage" unique_id=2130035242 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74.67429, 0, -109.279915)
-
-[node name="tree34" parent="Map/stage/Foiliage" unique_id=980290244 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 85.973114, 0, -94.04041)
-
-[node name="tree35" parent="Map/stage/Foiliage" unique_id=587412132 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.37448, 0, -97.37565)
-
-[node name="tree23" parent="Map/stage/Foiliage" unique_id=2051395624 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96.33263, 0, -80.03856)
-
-[node name="tree24" parent="Map/stage/Foiliage" unique_id=1928160330 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96.33263, 0, -41.65696)
-
-[node name="tree36" parent="Map/stage/Foiliage" unique_id=143521080 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 86.31328, 1.9073486e-06, -35.94023)
-
-[node name="tree37" parent="Map/stage/Foiliage" unique_id=245190836 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96.58054, 1.9073486e-06, -36.91127)
-
-[node name="tree25" parent="Map/stage/Foiliage" unique_id=964694337 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96.33263, 0, -66.31381)
-
-[node name="tree26" parent="Map/stage/Foiliage" unique_id=1120226667 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 77.3947, 0, -16.937721)
-
-[node name="tree38" parent="Map/stage/Foiliage" unique_id=918947953 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 77.3947, 0, -30.25157)
-
-[node name="tree39" parent="Map/stage/Foiliage" unique_id=2061445836 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60.4554, 0, -18.181318)
-
-[node name="tree40" parent="Map/stage/Foiliage" unique_id=304697842 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.762196, 0, -77.38002)
-
-[node name="tree41" parent="Map/stage/Foiliage" unique_id=1108424769 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.762196, 0, -62.820488)
-
-[node name="tree42" parent="Map/stage/Foiliage" unique_id=1825177391 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.183721, 0, -54.043713)
-
-[node name="tree43" parent="Map/stage/Foiliage" unique_id=1540828276 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.762196, 0, -42.622913)
-
-[node name="tree44" parent="Map/stage/Foiliage" unique_id=692268344 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.765928, 0, -45.68494)
-
-[node name="tree45" parent="Map/stage/Foiliage" unique_id=1058197432 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.12008, 0, -57.80481)
-
-[node name="tree46" parent="Map/stage/Foiliage" unique_id=1417362101 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.182678, 0, -69.95378)
-
-[node name="tree47" parent="Map/stage/Foiliage" unique_id=2035497073 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.182678, 0, -77.63275)
-
-[node name="tree48" parent="Map/stage/Foiliage" unique_id=1214472502 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.182678, 0, -91.594536)
-
-[node name="tree49" parent="Map/stage/Foiliage" unique_id=1304890382 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.182678, 0, -91.594536)
-
-[node name="tree27" parent="Map/stage/Foiliage" unique_id=330603972 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 89.20046, 0, -22.81559)
-
-[node name="tree28" parent="Map/stage/Foiliage" unique_id=1942260808 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 102.06137, 3.3630753, -22.81559)
-
-[node name="tree29" parent="Map/stage/Foiliage" unique_id=1406486074 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 102.72547, -38.519432, -22.81559)
-
-[node name="tree30" parent="Map/stage/Foiliage" unique_id=240833026 instance=ExtResource("10_ya4ey")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 97.34085, -38.519432, -51.690166)
-
-[node name="Root Scene" parent="Map/stage/Foiliage" unique_id=1939913641 instance=ExtResource("4_5he1u")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.554209, 1.2287097, -32.688698)
+[node name="OmniLight3D13" type="OmniLight3D" parent="Map/stage/Lights" unique_id=1994542349]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.715656, 4.1921906, -64.18814)
+light_color = Color(0.8712964, 0.40473092, 0.3082592, 1)
+light_energy = 0.633
+shadow_enabled = true
+omni_range = 21.054
+omni_attenuation = 2.0
 
 [node name="Furniture" type="Node3D" parent="Map/stage" unique_id=1134695975]
 
-[node name="Root Scene" parent="Map/stage/Furniture" unique_id=738290227 instance=ExtResource("5_5poiv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.44284, 0.7615392, -29.80753)
+[node name="Chair" parent="Map/stage/Furniture" unique_id=738290227 instance=ExtResource("5_5poiv")]
+transform = Transform3D(0.8520194, 0, -0.52351016, 0, 1, 0, 0.52351016, 0, 0.8520194, 46.60983, 1.231558, -47.28212)
 
-[node name="Root Scene2" parent="Map/stage/Furniture" unique_id=1411798454 instance=ExtResource("6_2cjbq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.635529, 0.70754766, -29.646557)
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/Chair" unique_id=105951893]
 
-[node name="Root Scene3" parent="Map/stage/Furniture" unique_id=1376155417 instance=ExtResource("7_chjal")]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/Chair/StaticBody3D" unique_id=751215837]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9073486e-06, -0.30664063, 0.06500244)
+shape = SubResource("BoxShape3D_bjg73")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Map/stage/Furniture/Chair/StaticBody3D" unique_id=2058392883]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9073486e-06, 0.086364746, -0.15289307)
+shape = SubResource("BoxShape3D_bu4jf")
+
+[node name="DeskLamp" parent="Map/stage/Furniture" unique_id=317517783 instance=ExtResource("45_txyw0")]
+transform = Transform3D(0.5350308, 0, 0.8448326, 0, 1, 0, -0.8448326, 0, 0.5350308, 45.029526, 1.305666, -45.180508)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/DeskLamp" unique_id=1263090850]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/DeskLamp/StaticBody3D" unique_id=136094877]
+transform = Transform3D(0.99999976, 0, 0, 0, 1, 0, 0, 0, 0.99999976, -0.02368164, -0.0070495605, 0)
+shape = SubResource("BoxShape3D_nvyfr")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Map/stage/Furniture/DeskLamp" unique_id=1038475166]
+transform = Transform3D(0.8456333, -0.5130642, -0.14720434, -0.0051380936, -0.2835972, 0.9589297, -0.5337392, -0.81014663, -0.24245542, -0.27661514, 0.021621346, 0.039852142)
+light_color = Color(1.9455549, 1.2269001, 0.20723943, 1)
+light_energy = 0.238
+shadow_enabled = true
+spot_range = 0.995
+spot_attenuation = 2.0
+
+[node name="DeskLamp2" parent="Map/stage/Furniture" unique_id=1404245738 instance=ExtResource("45_txyw0")]
+transform = Transform3D(0.9660252, 0, -0.25844815, 0, 1, 0, 0.25844815, 0, 0.9660252, 57.3063, 1.4499941, -46.084064)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/DeskLamp2" unique_id=964376435]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/DeskLamp2/StaticBody3D" unique_id=837320032]
+transform = Transform3D(0.99999976, 0, 0, 0, 1, 0, 0, 0, 0.99999976, -0.02368164, -0.0070495605, 0)
+shape = SubResource("BoxShape3D_nvyfr")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Map/stage/Furniture/DeskLamp2" unique_id=563866672]
+transform = Transform3D(0.8456333, -0.5130642, -0.14720434, -0.0051380936, -0.2835972, 0.9589297, -0.5337392, -0.81014663, -0.24245542, -0.27661514, 0.021621346, 0.039852142)
+light_color = Color(1.9455549, 1.2269001, 0.20723943, 1)
+light_energy = 0.238
+shadow_enabled = true
+spot_range = 0.995
+spot_attenuation = 2.0
+
+[node name="GlassBottle" parent="Map/stage/Furniture" unique_id=1411798454 instance=ExtResource("6_2cjbq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.451843, 1.4209439, -45.51767)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/GlassBottle" unique_id=1240522470]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/GlassBottle/StaticBody3D" unique_id=1488826393]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.10449219, 0)
+shape = SubResource("CylinderShape3D_vc5cj")
+
+[node name="GlassBottle6" parent="Map/stage/Furniture" unique_id=1824855832 instance=ExtResource("6_2cjbq")]
+transform = Transform3D(0.85630316, -0.51641804, -0.0075716395, 0, 0.014660266, -0.99989253, 0.51647353, 0.8562111, 0.012553632, 43.473934, 1.0242394, -47.01664)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/GlassBottle6" unique_id=1004775146]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/GlassBottle6/StaticBody3D" unique_id=173292701]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.10449219, 0)
+shape = SubResource("CylinderShape3D_vc5cj")
+
+[node name="GlassBottle7" parent="Map/stage/Furniture" unique_id=6142863 instance=ExtResource("6_2cjbq")]
+transform = Transform3D(0.83258295, -0.5424499, 0.11204386, 0.10904063, 0.35883683, 0.9270094, -0.5430615, -0.7595948, 0.3579105, 43.556984, 1.1110502, -47.14149)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/GlassBottle7" unique_id=448736468]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/GlassBottle7/StaticBody3D" unique_id=294205238]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.10449219, 0)
+shape = SubResource("CylinderShape3D_vc5cj")
+
+[node name="GlassBottle2" parent="Map/stage/Furniture" unique_id=1392075781 instance=ExtResource("6_2cjbq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.370296, 1.4209439, -45.29654)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/GlassBottle2" unique_id=374999367]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/GlassBottle2/StaticBody3D" unique_id=544728495]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.10449219, 0)
+shape = SubResource("CylinderShape3D_vc5cj")
+
+[node name="GlassBottle3" parent="Map/stage/Furniture" unique_id=1242036826 instance=ExtResource("6_2cjbq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.39658, 1.4209439, -45.104946)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/GlassBottle3" unique_id=1632274872]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/GlassBottle3/StaticBody3D" unique_id=995560658]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.10449219, 0)
+shape = SubResource("CylinderShape3D_vc5cj")
+
+[node name="GlassBottle4" parent="Map/stage/Furniture" unique_id=1137700559 instance=ExtResource("6_2cjbq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.577274, 1.4209439, -45.30892)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/GlassBottle4" unique_id=1049082224]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/GlassBottle4/StaticBody3D" unique_id=1472095287]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.10449219, 0)
+shape = SubResource("CylinderShape3D_vc5cj")
+
+[node name="GlassBottle5" parent="Map/stage/Furniture" unique_id=209218794 instance=ExtResource("6_2cjbq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.571564, 1.4209439, -45.185555)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/GlassBottle5" unique_id=890207565]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/GlassBottle5/StaticBody3D" unique_id=1308209140]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.10449219, 0)
+shape = SubResource("CylinderShape3D_vc5cj")
+
+[node name="GlassBottle8" parent="Map/stage/Furniture" unique_id=1779462039 instance=ExtResource("6_2cjbq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.45305, 0.7920426, -45.016693)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/GlassBottle8" unique_id=330836114]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/GlassBottle8/StaticBody3D" unique_id=1670461417]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.10449219, 0)
+shape = SubResource("CylinderShape3D_vc5cj")
+
+[node name="GlassBottle9" parent="Map/stage/Furniture" unique_id=1882999400 instance=ExtResource("6_2cjbq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.479332, 0.7920426, -44.8251)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/GlassBottle9" unique_id=1446662786]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/GlassBottle9/StaticBody3D" unique_id=1802846024]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.10449219, 0)
+shape = SubResource("CylinderShape3D_vc5cj")
+
+[node name="GlassBottle10" parent="Map/stage/Furniture" unique_id=198115170 instance=ExtResource("6_2cjbq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.660027, 0.7920426, -45.029076)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/GlassBottle10" unique_id=288183181]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/GlassBottle10/StaticBody3D" unique_id=598198056]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.10449219, 0)
+shape = SubResource("CylinderShape3D_vc5cj")
+
+[node name="GlassBottle11" parent="Map/stage/Furniture" unique_id=1496187413 instance=ExtResource("6_2cjbq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.654316, 0.7920426, -44.90571)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/GlassBottle11" unique_id=1358416927]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/GlassBottle11/StaticBody3D" unique_id=229137677]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.10449219, 0)
+shape = SubResource("CylinderShape3D_vc5cj")
+
+[node name="Cup" parent="Map/stage/Furniture" unique_id=1376155417 instance=ExtResource("7_chjal")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.28245, 0.5348518, -29.639162)
 
-[node name="Root Scene4" parent="Map/stage/Furniture" unique_id=1542980623 instance=ExtResource("8_cjqg0")]
+[node name="GardenLamp" parent="Map/stage/Furniture" unique_id=1542980623 instance=ExtResource("8_cjqg0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.80538, 1.108006, -32.234364)
 
-[node name="Root Scene5" parent="Map/stage/Furniture" unique_id=39941735 instance=ExtResource("9_vchkt")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.19851, 0.03300655, -39.404934)
-
-[node name="Root Scene6" parent="Map/stage/Furniture" unique_id=1509684805 instance=ExtResource("10_txyw0")]
+[node name="Lantern" parent="Map/stage/Furniture" unique_id=1509684805 instance=ExtResource("10_txyw0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.596764, 0.42096663, -31.749334)
 
-[node name="Root Scene30" parent="Map/stage/Furniture" unique_id=324872809 instance=ExtResource("10_txyw0")]
+[node name="Lantern2" parent="Map/stage/Furniture" unique_id=324872809 instance=ExtResource("10_txyw0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.50848, 0.54106486, -55.58124)
 
-[node name="Root Scene31" parent="Map/stage/Furniture" unique_id=478703997 instance=ExtResource("10_txyw0")]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/Lantern2" unique_id=1167114916]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/Lantern2/StaticBody3D" unique_id=1181451649]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37309194, 0)
+shape = SubResource("BoxShape3D_txyw0")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Map/stage/Furniture/Lantern2" unique_id=684296116]
+light_color = Color(0.7600782, 0.33751997, 0.2525563, 1)
+light_energy = 0.0
+shadow_enabled = true
+omni_range = 3.54
+omni_attenuation = 2.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Map/stage/Furniture/Lantern2/OmniLight3D" unique_id=1572800160]
+libraries/ = SubResource("AnimationLibrary_nvyfr")
+autoplay = &"flickerLantern"
+
+[node name="Lantern4" parent="Map/stage/Furniture" unique_id=913108564 instance=ExtResource("10_txyw0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68.20543, 0.5410644, -51.98613)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/Lantern4" unique_id=1964875776]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/Lantern4/StaticBody3D" unique_id=1959060924]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37309194, 0)
+shape = SubResource("BoxShape3D_txyw0")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Map/stage/Furniture/Lantern4" unique_id=1847824950]
+light_color = Color(0.7600782, 0.33751997, 0.2525563, 1)
+light_energy = 0.0
+shadow_enabled = true
+omni_range = 3.54
+omni_attenuation = 2.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Map/stage/Furniture/Lantern4/OmniLight3D" unique_id=1183716656]
+libraries/ = SubResource("AnimationLibrary_nvyfr")
+autoplay = &"flickerLantern"
+
+[node name="Lantern3" parent="Map/stage/Furniture" unique_id=478703997 instance=ExtResource("10_txyw0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.98692, 0.98178506, -59.54462)
 
-[node name="Root Scene7" parent="Map/stage/Furniture" unique_id=1404346136 instance=ExtResource("11_vc5cj")]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/Lantern3" unique_id=699979362]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/Lantern3/StaticBody3D" unique_id=1502974610]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37309194, 0)
+shape = SubResource("BoxShape3D_txyw0")
+
+[node name="TableSmall" parent="Map/stage/Furniture" unique_id=1404346136 instance=ExtResource("11_vc5cj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.49944, 0.6825825, -59.113365)
 
-[node name="Root Scene8" parent="Map/stage/Furniture" unique_id=878095903 instance=ExtResource("12_nvyfr")]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/TableSmall" unique_id=51048193]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/TableSmall/StaticBody3D" unique_id=1401306859]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0015869141, -0.103149414, -0.0011444092)
+shape = SubResource("BoxShape3D_vchkt")
+
+[node name="Bench" parent="Map/stage/Furniture" unique_id=878095903 instance=ExtResource("12_nvyfr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.9843, 0.6395285, -26.092836)
 
-[node name="Root Scene9" parent="Map/stage/Furniture" unique_id=25596832 instance=ExtResource("13_ty1g6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.585625, 1.6996231, -26.02772)
-
-[node name="Root Scene10" parent="Map/stage/Furniture" unique_id=442617308 instance=ExtResource("14_j2jfr")]
+[node name="Table" parent="Map/stage/Furniture" unique_id=442617308 instance=ExtResource("14_j2jfr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.481968, 1.3103678, -27.166773)
 
-[node name="Root Scene11" parent="Map/stage/Furniture" unique_id=539866247 instance=ExtResource("15_bjg73")]
+[node name="Lamp" parent="Map/stage/Furniture" unique_id=539866247 instance=ExtResource("15_bjg73")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.342438, 1.9990239, -32.768013)
 
-[node name="Root Scene32" parent="Map/stage/Furniture" unique_id=1579860238 instance=ExtResource("15_bjg73")]
+[node name="Lamp2" parent="Map/stage/Furniture" unique_id=1579860238 instance=ExtResource("15_bjg73")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.495155, 4.4086847, -53.070927)
 
-[node name="Root Scene33" parent="Map/stage/Furniture" unique_id=1398395503 instance=ExtResource("15_bjg73")]
+[node name="Lamp3" parent="Map/stage/Furniture" unique_id=1398395503 instance=ExtResource("15_bjg73")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.728943, 4.4086847, -64.2184)
 
-[node name="Root Scene12" parent="Map/stage/Furniture" unique_id=449764540 instance=ExtResource("16_bu4jf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.909187, 1.1958978, -34.651363)
+[node name="Carpet" parent="Map/stage/Furniture" unique_id=1099263326 instance=ExtResource("24_o7ddy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.40677, 0.48855853, -44.896484)
 
-[node name="Root Scene13" parent="Map/stage/Furniture" unique_id=1099263326 instance=ExtResource("24_o7ddy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.251617, 0.4056921, -32.171467)
-
-[node name="Root Scene14" parent="Map/stage/Furniture" unique_id=11497180 instance=ExtResource("25_0loja")]
+[node name="Sink" parent="Map/stage/Furniture" unique_id=11497180 instance=ExtResource("25_0loja")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.244411, 1.5137143, -29.523787)
 
-[node name="Root Scene15" parent="Map/stage/Furniture" unique_id=548618148 instance=ExtResource("26_ids8r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.85654, 1.1890023, -30.80311)
+[node name="Table_2" parent="Map/stage/Furniture" unique_id=548618148 instance=ExtResource("26_ids8r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.126312, 0.5086429, -44.947266)
 
-[node name="Root Scene16" parent="Map/stage/Furniture" unique_id=1738576371 instance=ExtResource("27_dnhof")]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/Table_2" unique_id=516063287]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/Table_2/StaticBody3D" unique_id=1585632464]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4290161, 0)
+shape = SubResource("BoxShape3D_o7ddy")
+
+[node name="Couch2P" parent="Map/stage/Furniture" unique_id=1738576371 instance=ExtResource("27_dnhof")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.529636, 1.2047415, -34.318405)
 
-[node name="Root Scene17" parent="Map/stage/Furniture" unique_id=1108761239 instance=ExtResource("28_1v6qk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.084866, 1.7763212, -36.320343)
-
-[node name="Root Scene18" parent="Map/stage/Furniture" unique_id=896900680 instance=ExtResource("29_augu2")]
+[node name="Toaster" parent="Map/stage/Furniture" unique_id=896900680 instance=ExtResource("29_augu2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.487299, 0.7977407, -33.065308)
 
-[node name="Root Scene19" parent="Map/stage/Furniture" unique_id=872813613 instance=ExtResource("30_tm6hj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.470415, 1.0944786, -35.591877)
+[node name="Couch3P" parent="Map/stage/Furniture" unique_id=872813613 instance=ExtResource("30_tm6hj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.28881, 0.91934776, -47.34683)
 
-[node name="Root Scene20" parent="Map/stage/Furniture" unique_id=48594524 instance=ExtResource("31_kf5aa")]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/Couch3P" unique_id=1483977951]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/Couch3P/StaticBody3D" unique_id=839687997]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.018066406, 0.021484375)
+shape = SubResource("BoxShape3D_ty1g6")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Map/stage/Furniture/Couch3P/StaticBody3D" unique_id=778178021]
+transform = Transform3D(1, 0, 0, 0, 0.96642095, 0.2569641, 0, -0.2569641, 0.96642095, 0, 0.07031089, -0.22789764)
+shape = SubResource("BoxShape3D_j2jfr")
+
+[node name="Shelf" parent="Map/stage/Furniture" unique_id=48594524 instance=ExtResource("31_kf5aa")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.744263, 1.1025596, -29.372032)
 
-[node name="Root Scene21" parent="Map/stage/Furniture" unique_id=1847357907 instance=ExtResource("32_t5ykj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.06153, 1.3371294, -26.897263)
+[node name="Bed" parent="Map/stage/Furniture" unique_id=1847357907 instance=ExtResource("32_t5ykj")]
+transform = Transform3D(0.89673376, 0, -0.44257045, 0, 1, 0, 0.44257045, 0, 0.89673376, 56.454243, 1.0601691, -45.7241)
 
-[node name="Root Scene22" parent="Map/stage/Furniture" unique_id=1728028469 instance=ExtResource("33_e755i")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.675713, 1.4095044, -26.96212)
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/Bed" unique_id=2053923969]
 
-[node name="Root Scene23" parent="Map/stage/Furniture" unique_id=713473698 instance=ExtResource("34_ro3en")]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/Bed/StaticBody3D" unique_id=13477866]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.34010124, -0.21539307, -0.23656464)
+shape = SubResource("BoxShape3D_0loja")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Map/stage/Furniture/Bed/StaticBody3D" unique_id=277979220]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.30333138, 0.107177734, -1.4301071)
+shape = SubResource("BoxShape3D_ids8r")
+
+[node name="Cabinet" parent="Map/stage/Furniture" unique_id=1728028469 instance=ExtResource("33_e755i")]
+transform = Transform3D(0.89673376, 0, -0.44257045, 0, 1, 0, 0.44257045, 0, 0.89673376, 57.431564, 0.8252977, -46.14742)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/Cabinet" unique_id=1168648547]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/Cabinet/StaticBody3D" unique_id=56854649]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05810547, 0)
+shape = SubResource("BoxShape3D_dnhof")
+
+[node name="DeskLamp3" parent="Map/stage/Furniture" unique_id=607585508 instance=ExtResource("45_txyw0")]
+transform = Transform3D(0.9660252, 0, -0.25844815, 0, 1, 0, 0.25844815, 0, 0.9660252, 69.05191, 1.4499941, -66.00391)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/DeskLamp3" unique_id=1738711964]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/DeskLamp3/StaticBody3D" unique_id=616307227]
+transform = Transform3D(0.99999976, 0, 0, 0, 1, 0, 0, 0, 0.99999976, -0.02368164, -0.0070495605, 0)
+shape = SubResource("BoxShape3D_nvyfr")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Map/stage/Furniture/DeskLamp3" unique_id=975469772]
+transform = Transform3D(0.8253389, -0.4144436, 0.38347375, -0.27596676, 0.29642293, 0.9143173, -0.49260318, -0.8604475, 0.1302768, -0.2766304, 0.021621346, 0.039855957)
+light_color = Color(1.9455549, 1.2269001, 0.20723943, 1)
+light_energy = 0.238
+shadow_enabled = true
+spot_range = 3.123
+spot_attenuation = 2.0
+spot_angle = 79.36
+
+[node name="Bed2" parent="Map/stage/Furniture" unique_id=1965337619 instance=ExtResource("32_t5ykj")]
+transform = Transform3D(0.89673376, 0, -0.44257045, 0, 1, 0, 0.44257045, 0, 0.89673376, 68.19985, 1.0601691, -65.643936)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/Bed2" unique_id=752099765]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/Bed2/StaticBody3D" unique_id=952702477]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.34010124, -0.21539307, -0.23656464)
+shape = SubResource("BoxShape3D_0loja")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Map/stage/Furniture/Bed2/StaticBody3D" unique_id=1277815170]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.30333138, 0.107177734, -1.4301071)
+shape = SubResource("BoxShape3D_ids8r")
+
+[node name="Cabinet2" parent="Map/stage/Furniture" unique_id=1949082300 instance=ExtResource("33_e755i")]
+transform = Transform3D(0.89673376, 0, -0.44257045, 0, 1, 0, 0.44257045, 0, 0.89673376, 69.17717, 0.8252977, -66.06726)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/Cabinet2" unique_id=1017665596]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/Cabinet2/StaticBody3D" unique_id=1838608027]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05810547, 0)
+shape = SubResource("BoxShape3D_dnhof")
+
+[node name="DeskLamp4" parent="Map/stage/Furniture" unique_id=1422245457 instance=ExtResource("45_txyw0")]
+transform = Transform3D(0.33936185, 0, -0.9406559, 0, 1, 0, 0.9406559, 0, 0.33936185, 75.03074, 1.4499941, -65.325676)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/DeskLamp4" unique_id=1183326797]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/DeskLamp4/StaticBody3D" unique_id=1871150511]
+transform = Transform3D(0.99999976, 0, 0, 0, 1, 0, 0, 0, 0.99999976, -0.02368164, -0.0070495605, 0)
+shape = SubResource("BoxShape3D_nvyfr")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Map/stage/Furniture/DeskLamp4" unique_id=1308432456]
+transform = Transform3D(0.8253389, -0.4144436, 0.38347375, -0.27596676, 0.29642293, 0.9143173, -0.49260318, -0.8604475, 0.1302768, -0.2766304, 0.021621346, 0.039855957)
+light_color = Color(1.9455549, 1.2269001, 0.20723943, 1)
+light_energy = 0.238
+shadow_enabled = true
+spot_range = 3.123
+spot_attenuation = 2.0
+spot_angle = 79.36
+
+[node name="Bed3" parent="Map/stage/Furniture" unique_id=895225527 instance=ExtResource("32_t5ykj")]
+transform = Transform3D(0.14863786, 0, -0.9888917, 0, 1, 0, 0.9888917, 0, 0.14863786, 74.24873, 1.0601691, -65.81969)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/Bed3" unique_id=144226162]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/Bed3/StaticBody3D" unique_id=44932254]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.34010124, -0.21539307, -0.23656464)
+shape = SubResource("BoxShape3D_0loja")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Map/stage/Furniture/Bed3/StaticBody3D" unique_id=1834308191]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.30333138, 0.107177734, -1.4301071)
+shape = SubResource("BoxShape3D_ids8r")
+
+[node name="Cabinet3" parent="Map/stage/Furniture" unique_id=703084861 instance=ExtResource("33_e755i")]
+transform = Transform3D(0.14863786, 0, -0.9888917, 0, 1, 0, 0.9888917, 0, 0.14863786, 75.15427, 0.8252977, -65.25901)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/Cabinet3" unique_id=2034542697]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/Cabinet3/StaticBody3D" unique_id=1878180603]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05810547, 0)
+shape = SubResource("BoxShape3D_dnhof")
+
+[node name="DeskLamp5" parent="Map/stage/Furniture" unique_id=1692041091 instance=ExtResource("45_txyw0")]
+transform = Transform3D(-0.96660006, 0, -0.25628933, 0, 1, 0, 0.25628933, 0, -0.96660006, 74.65025, 1.4499941, -53.87742)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/DeskLamp5" unique_id=210609738]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/DeskLamp5/StaticBody3D" unique_id=1729208705]
+transform = Transform3D(0.99999976, 0, 0, 0, 1, 0, 0, 0, 0.99999976, -0.02368164, -0.0070495605, 0)
+shape = SubResource("BoxShape3D_nvyfr")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Map/stage/Furniture/DeskLamp5" unique_id=1903131175]
+transform = Transform3D(0.8253389, -0.4144436, 0.38347375, -0.27596676, 0.29642293, 0.9143173, -0.49260318, -0.8604475, 0.1302768, -0.2766304, 0.021621346, 0.039855957)
+light_color = Color(1.9455549, 1.2269001, 0.20723943, 1)
+light_energy = 0.238
+shadow_enabled = true
+spot_range = 3.123
+spot_attenuation = 2.0
+spot_angle = 79.36
+
+[node name="Bed4" parent="Map/stage/Furniture" unique_id=2041517173 instance=ExtResource("32_t5ykj")]
+transform = Transform3D(-0.99807036, 0, -0.062093675, 0, 1, 0, 0.062093675, 0, -0.99807036, 75.21039, 1.0601691, -54.61351)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/Bed4" unique_id=2119448801]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/Bed4/StaticBody3D" unique_id=718821178]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.34010124, -0.21539307, -0.23656464)
+shape = SubResource("BoxShape3D_0loja")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Map/stage/Furniture/Bed4/StaticBody3D" unique_id=704692912]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.30333138, 0.107177734, -1.4301071)
+shape = SubResource("BoxShape3D_ids8r")
+
+[node name="Cabinet4" parent="Map/stage/Furniture" unique_id=161722893 instance=ExtResource("33_e755i")]
+transform = Transform3D(-0.99807036, 0, -0.062093675, 0, 1, 0, 0.062093675, 0, -0.99807036, 74.573105, 0.8252977, -53.760155)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/Cabinet4" unique_id=977301992]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/Cabinet4/StaticBody3D" unique_id=893789312]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05810547, 0)
+shape = SubResource("BoxShape3D_dnhof")
+
+[node name="CabinetBig" parent="Map/stage/Furniture" unique_id=713473698 instance=ExtResource("34_ro3en")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.493465, 1.2681394, -28.789215)
 
-[node name="Root Scene24" parent="Map/stage/Furniture" unique_id=149219834 instance=ExtResource("35_od4ux")]
+[node name="BoxingBag" parent="Map/stage/Furniture" unique_id=149219834 instance=ExtResource("35_od4ux")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.949824, 1.436908, -28.162228)
 
-[node name="Root Scene25" parent="Map/stage/Furniture" unique_id=1869692051 instance=ExtResource("36_xhfw6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.357403, 0.6363845, -29.172316)
+[node name="Jar" parent="Map/stage/Furniture" unique_id=1869692051 instance=ExtResource("36_xhfw6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.116241, 0.6363845, -31.361662)
 
-[node name="Root Scene26" parent="Map/stage/Furniture" unique_id=1949038812 instance=ExtResource("37_1epgm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.721628, 1.7711039, -25.731049)
+[node name="BookshelfBIG" parent="Map/stage/Furniture" unique_id=1949038812 instance=ExtResource("37_1epgm")]
+transform = Transform3D(-0.8578856, 0, -0.51384073, 0, 1, 0, 0.51384073, 0, -0.8578856, 69.80889, 1.7711037, -51.0608)
 
-[node name="Root Scene27" parent="Map/stage/Furniture" unique_id=662544011 instance=ExtResource("38_152kg")]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/BookshelfBIG" unique_id=755227573]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/BookshelfBIG/StaticBody3D" unique_id=1400188604]
+shape = SubResource("BoxShape3D_1v6qk")
+
+[node name="BookshelfBIG2" parent="Map/stage/Furniture" unique_id=1765310482 instance=ExtResource("37_1epgm")]
+transform = Transform3D(-0.99555707, 0, -0.09416047, 0, 1, 0, 0.09416047, 0, -0.99555707, 66.07133, 1.7711037, -50.089767)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/BookshelfBIG2" unique_id=2099506377]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/BookshelfBIG2/StaticBody3D" unique_id=1754564506]
+shape = SubResource("BoxShape3D_1v6qk")
+
+[node name="BookshelfBIG3" parent="Map/stage/Furniture" unique_id=153583293 instance=ExtResource("37_1epgm")]
+transform = Transform3D(-0.53095496, 0, 0.8474, 0, 1, 0, -0.8474, 0, -0.53095496, 63.612724, 1.7711037, -52.378895)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/BookshelfBIG3" unique_id=1669746375]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/BookshelfBIG3/StaticBody3D" unique_id=698515768]
+shape = SubResource("BoxShape3D_1v6qk")
+
+[node name="TallCabinet" parent="Map/stage/Furniture" unique_id=662544011 instance=ExtResource("38_152kg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.968792, 1.3582959, -20.248417)
 
-[node name="Root Scene28" parent="Map/stage/Furniture" unique_id=57085424 instance=ExtResource("39_r4e17")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.78379, 1.2243154, -22.000095)
+[node name="Mirror" parent="Map/stage/Furniture" unique_id=57085424 instance=ExtResource("39_r4e17")]
+transform = Transform3D(-0.66924727, 0, -0.7430397, 0, 1, 0, 0.7430397, 0, -0.66924727, 69.91845, 1.2243116, -52.176086)
 
-[node name="Root Scene29" parent="Map/stage/Furniture" unique_id=202963798 instance=ExtResource("40_y57op")]
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/Mirror" unique_id=253812037]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/Mirror/StaticBody3D" unique_id=239924868]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.10491943, -0.087646484)
+shape = SubResource("BoxShape3D_augu2")
+
+[node name="Mirror2" parent="Map/stage/Furniture" unique_id=1605933244 instance=ExtResource("39_r4e17")]
+transform = Transform3D(-0.8502512, 0, 0.5263771, 0, 1, 0, -0.5263771, 0, -0.8502512, 66.99664, 1.2243117, -51.590202)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Map/stage/Furniture/Mirror2" unique_id=1316422795]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Map/stage/Furniture/Mirror2/StaticBody3D" unique_id=1904518495]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.10491943, -0.087646484)
+shape = SubResource("BoxShape3D_augu2")
+
+[node name="Stove" parent="Map/stage/Furniture" unique_id=202963798 instance=ExtResource("40_y57op")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.230515, 1.1587899, -20.03768)
+
+[node name="Chair_2" parent="Map/stage/Furniture" unique_id=1939913641 instance=ExtResource("4_5he1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.554209, 1.2287097, -32.688698)
+
+[node name="TV2" parent="Map/stage/Furniture" unique_id=611989258 instance=ExtResource("34_vchkt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.598145, 2.7339647, -40.25992)
 
 [node name="env" type="Node3D" parent="Map" unique_id=1388585201]
 
@@ -1027,61 +1804,19 @@ assets = SubResource("Terrain3DAssets_trceg")
 top_level = true
 metadata/_edit_lock_ = true
 
-[node name="OmniLight3D" type="OmniLight3D" parent="Map" unique_id=1550312829]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.91438, 1.2537017, -59.545483)
-light_color = Color(0.51515454, 0.16002369, 0.1404852, 1)
-light_energy = 16.0
-shadow_enabled = true
-omni_range = 10.0
-omni_attenuation = 2.0
-
-[node name="OmniLight3D3" type="OmniLight3D" parent="Map" unique_id=1938778729]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.528442, 0.7860341, -55.528984)
-light_color = Color(0.8712964, 0.40473092, 0.3082592, 1)
-light_energy = 2.059
-shadow_enabled = true
-omni_range = 10.0
-omni_attenuation = 2.0
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Map/OmniLight3D3" unique_id=2088575650]
-libraries/ = SubResource("AnimationLibrary_vchkt")
-autoplay = &"flicker"
-
-[node name="OmniLight3D5" type="OmniLight3D" parent="Map" unique_id=1591103687]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.469536, 4.1921906, -53.0666)
-light_color = Color(0.8712964, 0.40473092, 0.3082592, 1)
-light_energy = 2.059
-shadow_enabled = true
-omni_range = 0.997
-omni_attenuation = 2.0
-
-[node name="OmniLight3D6" type="OmniLight3D" parent="Map" unique_id=1994542349]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.715656, 4.1921906, -64.18814)
-light_color = Color(0.8712964, 0.40473092, 0.3082592, 1)
-light_energy = 0.633
-shadow_enabled = true
-omni_range = 21.054
-omni_attenuation = 2.0
-
-[node name="OmniLight3D2" type="OmniLight3D" parent="Map" unique_id=1752523809]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70.9589, 8.363824, -59.72691)
-light_energy = 16.0
-shadow_enabled = true
-omni_range = 7.546
-
 [node name="Jumpscares" type="Node3D" parent="." unique_id=850800540]
 
 [node name="Jumpscare" parent="Jumpscares" unique_id=1983837505 instance=ExtResource("44_cjqg0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.206722, 1.0904754, -34.426678)
 
 [node name="Jumpscare2" parent="Jumpscares" unique_id=959343277 instance=ExtResource("44_cjqg0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.187267, 1.0904754, -44.2361)
+transform = Transform3D(0.7556363, 0, 0.65499145, 0, 1, 0, -0.65499145, 0, 0.7556363, 45.26085, 1.0904757, -42.965473)
 
 [node name="Jumpscare3" parent="Jumpscares" unique_id=1346254803 instance=ExtResource("44_cjqg0")]
 transform = Transform3D(0.008726561, 0, 0.9999619, 0, 1, 0, -0.9999619, 0, 0.008726561, 50.465897, 1.0904754, -64.93283)
 
 [node name="Jumpscare4" parent="Jumpscares" unique_id=383603429 instance=ExtResource("44_cjqg0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 77.66488, 0.64302135, -59.291542)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.6512, 0.64302135, -59.291542)
 
 [node name="Trigger Boxs" type="Node3D" parent="." unique_id=1359684936]
 
