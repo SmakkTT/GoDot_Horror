@@ -4,16 +4,11 @@ extends CanvasLayer
 @onready var label = $Label
 @onready var interact_label = $Interact 
 
-# Kører når spillet starter
-func _ready():
-	# Lytter efter når GameManager siger, at opgaven er ændret
-	GameManager.objective_updated.connect(_update_label_text)
-	
-	# Lytter efter når GameManager siger, at interager-teksten skal vises
-	GameManager.interact_updated.connect(_update_interact_prompt)
-	
-	# Sørger for at skærmen er tom for tekst til at starte med
-	label.text = ""
+
+func _ready(): # Kører når spillet starter
+	GameManager.objective_updated.connect(_update_label_text) 	# Lytter efter når GameManager siger, at opgaven er ændret
+	GameManager.interact_updated.connect(_update_interact_prompt) # Lytter efter når GameManager siger, at interager-teksten skal vises
+	label.text = "" 	# Sørger for at skærmen er tom for tekst til at starte med
 	interact_label.visible = false
 
 # Denne funktion ændrer opgave-teksten (f.eks. "Find alle nøgler")

@@ -6,8 +6,8 @@ extends Area3D
 
 # Liste med billeder, du kan trække ind i Inspector
 @export var scare_textures: Array[Texture2D] = []
-# Hvor mange sekunder der går, før fælden kan skræmme igen
-@export var cooldown_time: float = 25.0
+
+@export var cooldown_time: float = 25.0 # Hvor mange sekunder der går, før fælden kan skræmme igen
 
 var is_playing: bool = false 
 

@@ -352,12 +352,12 @@ texture_list = Array[Terrain3DTextureAsset]([SubResource("Terrain3DTextureAsset_
 script/source = "extends Area3D
 
 func _on_body_entered(body: Node3D) -> void:
-	# Check if the object entering the area is part of your 'player' group
+	# Check if the object entering the area is part of 'player' group
 	if body.is_in_group(\"player\"):
-		# This calls your GameManager (the Autoload we made earlier)
+		# This calls  GameManager (Autoload)
 		GameManager.update_objective(\"Go in the house\")
 		
-		# queue_free() deletes this trigger so it doesn't keep firing
+		# queue_free() deletes this trigger so it doesnt keep firing
 		queue_free()
 "
 
