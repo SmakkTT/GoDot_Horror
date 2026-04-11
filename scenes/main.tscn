@@ -2018,7 +2018,7 @@ environment = SubResource("Environment_o6xl0")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="Map/env" unique_id=1419057728]
 transform = Transform3D(-0.77158564, 0.58430374, -0.25148517, -0.55153185, -0.41749117, 0.72215885, 0.31696734, 0.6959095, 0.6443924, -1.2546358, 9.702084, -33.510773)
 light_color = Color(0.27730417, 0.26618725, 0.17107555, 1)
-light_energy = 0.148
+light_energy = 5.979
 shadow_enabled = true
 
 [node name="Terrain" type="Node3D" parent="Map" unique_id=1189391429]
